@@ -1,103 +1,92 @@
-# Javadoc Guidelines
+﻿# Javadoc 编写规范
 
-Before we start the BurningOKR team wants to say thank you to [Stephen Colebourne](https://blog.joda.org/ "Stephen's blog")
-whose awesome [blog post](https://blog.joda.org/2012/11/javadoc-coding-standards.html) about his thoughts on Javadoc
-coding standards helped us a lot when creating the draft of our Javadoc guidelines (Follow Stephen on
-[Twitter](https://twitter.com/jodastephen)).
+在开始之前，BurningOKR 团队想感谢 [Stephen Colebourne](https://blog.joda.org/ "Stephen's blog")。
+我们在制定 Javadoc 规范草案时，受到了他这篇[博文](https://blog.joda.org/2012/11/javadoc-coding-standards.html)的很大启发（可在 [Twitter](https://twitter.com/jodastephen) 关注他）。
 
-To ensure a homogeneous documentation and a high degree of readability and maintainability we want to
-establish a few rules when it comes to documenting your (or somebody else's) code. Those rules (or guidelines)
-are supposed to enable new contributors to quickly get a grasp of the code they are looking at and so keep the
-process of understanding the project as frictionless as we can. To achieve that it is mandatory to keep documentation
-complete, consistent and readable.
+为保证文档风格统一，并提升可读性与可维护性，我们制定了以下规则，用于你在编写（或补充）代码文档时参考。
+这些规则可以帮助新贡献者更快理解代码，降低项目上手成本。
+因此，文档需要尽量做到完整、一致、可读。
 
-## General
+## 通用规则
 
-Every part of a Javadoc comment needs to follow these rules:
+Javadoc 注释的每个部分都应遵循：
 
-- Grammatical correctness (spelling and punctuation)
-- short but informative
-- repress any puns or jokes
-- do NOT use ``@author``
-- each element (header, body, the param-block, etc) is separated by a \<p>
+- 语法正确（拼写、标点）
+- 简短但信息充分
+- 避免双关和玩笑
+- 不要使用 `@author`
+- 每个元素（header、body、param 区块等）用 `<p>` 分段
 
-`
-Note that character limits are not hard limits. Depending on the complexity of the documented code, the limit can be exceeded by quite a bit. Keep in mind, however to keep everything as short as possible.
-`
+`注意：字符数限制并非绝对。复杂场景可以适当超出，但仍应尽量简洁。`
 
-### Header
+### Header（摘要行）
 
-The header exists to give a short explanation of the documented code's purpose.
+Header 用于简要说明该代码的用途。
 
-- a precise, single-line sentence describing the method or class
-- no more than 100 characters
-- should be plain text
-- no in-depth context
+- 用一句精确的话描述方法或类
+- 不超过 100 个字符
+- 应为纯文本
+- 不展开深层背景
 
 ```java
 /**
-  * Takes an integer and returns twice its value.
+  * 接收一个整数并返回其两倍值。
   *
   * [...]
   */
 public String double(int number){return 2*number;}
 ```
 
-### Body
+### Body（正文）
 
-The body can be used to give more in-depth information about the context the method is used in.
-Notice, however, that in some cases the header might already give enough information about the
-purpose of the class or method. Some guidelines for the body:
+Body 可用于补充更深入的上下文。
+但在某些情况下，Header 已足够说明用途，Body 可以省略。
 
-- give context
-- no more than 100 characters per line
-- may use HTML tags
-- reference other classes, methods etc. (`@code` and `@link`)
-- can and should be split into multiple paragraphs (\<p>) for more complicated contexts
+建议：
 
-`
-Important:
-When referencing other classes in the body only use @link on the first occurrence and @code each time after that.
-`
+- 提供必要上下文
+- 每行不超过 100 个字符
+- 可使用 HTML 标签
+- 可引用其他类、方法（`@code` 与 `@link`）
+- 复杂场景建议拆分为多个段落（`<p>`）
+
+`重要：在正文中引用其他类时，首次出现使用 @link，后续出现使用 @code。`
 
 ```java
 /**
   * [...]
-  * Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
+  * Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
   * tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
   * <p>
-  * Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
-  * eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam 
+  * Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+  * eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
   * voluptua.
   * [...]
   */
 public String foo(int number, Object obj){...}
 ```
 
-<!--The body is separated from the header by a paragraph (\<p>) and may contain more in depth information
-about the function and the context of the documented part of the code. Is is important to note
-that the Body itself can also be divided into multiple paragraphs to keep readability high and
-sophisticated contexts well structured.-->
+### Params（参数）
 
-### Params
+`@param` 用于说明方法参数。
+还需要明确参数为 `null` 时的行为。
+我们规定在参数说明后追加后缀（用逗号分隔）来表达这一点。
 
-The `@param` entries are used to explain the parameters given to a specific method. It is also necessary to
-clarify the behaviour of the method should a parameter be null. To do that we define this kind of behaviour as a suffix
-behind the parameter explanation separated by a comma. The types of suffixes are:
-
-| Suffix               | Description                                                                                       |
+| 后缀 | 含义 |
 | :------------------- | :------------------------------------------------------------------------------------------------ |
-| not null             | parameter cannot be null. Will otherwise result in a ``NullPointerException``.                    |
-| nullable -> [result] | parameter can be null. [result] represents a description of how a null value is handled.          |
-| null returns [value] | parameter can be null. A custom [value] can be defined as a return value, e.g. "null returns -1". |
+| not null             | 参数不能为空，否则会抛出 `NullPointerException`。 |
+| nullable -> [result] | 参数可为空；`[result]` 说明空值处理方式。 |
+| null returns [value] | 参数可为空；可自定义返回值，例如 `null returns -1`。 |
 
-The parameter descriptions themselves should be no more a short description. If there is too much context to a parameter
-it should be explained in the body of the Javadoc comment. The general guidelines are:
+参数描述本身应尽量简短。
+若参数上下文很多，请放到 Body 说明。
 
-- every parameter needs an `@parameter`
-- every parameter needs one type of suffix specified in the table above
-- the order of the `@params` is equivalent to the order they appear in the method header
-- description is no complete sentence
+通用要求：
+
+- 每个参数都要有 `@param`
+- 每个参数都要注明上表中的一种后缀
+- `@param` 顺序与方法签名参数顺序一致
+- 描述不必写成完整句子
 
 ```java
 /**
@@ -110,14 +99,14 @@ it should be explained in the body of the Javadoc comment. The general guideline
 public String foo(int number, Object obj){...}
 ```
 
-### Returns
+### Returns（返回值）
 
-The `@return` describes the return value of a method's result. Use it as if `@return` initiates
-a sentence.
+`@return` 用于描述方法返回结果。
+写作时可把它看成以“returns ...”开头的一句话。
 
-- keep it precise
-- document it as if ist a sentence beginning with 'returns'
-- void type methods do not require an ```@return```
+- 保持精确
+- 按句子方式表述
+- 返回类型为 `void` 的方法不需要 `@return`
 
 ```java
 /**

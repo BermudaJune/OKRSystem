@@ -1,0 +1,21 @@
+11:08:39,405 |-WARN in ch.qos.logback.core.ConsoleAppender[Console] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+11:08:39,405 |-WARN in ch.qos.logback.core.ConsoleAppender[Console] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+11:08:39,405 |-WARN in ch.qos.logback.core.ConsoleAppender[Console] - See also https://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+11:08:39,407 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@366ef90e - SizeAndTimeBasedFNATP class was renamed as SizeAndTimeBasedFileNamingAndTriggeringPolicy.
+11:08:39,408 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@366ef90e - Direct use of either SizeAndTimeBasedFNATP or SizeAndTimeBasedFileNamingAndTriggeringPolicy 
+11:08:39,408 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@366ef90e - is deprecated. Please use SizeAndTimeBasedRollingPolicy instead.
+11:08:39,408 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@366ef90e - For more information see https://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':burning-okr-app:bootRun'.
+> Process 'command 'C:\Program Files\Java\jdk-17\bin\java.exe'' finished with non-zero exit value -1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 10m 56s

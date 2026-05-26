@@ -1,0 +1,35 @@
+
+> okr-frontend@1.0.0 start-dev
+> npm run start -- --configuration local
+
+
+> okr-frontend@1.0.0 prestart
+> ts-appversion
+
+[TsAppVersion] [32mApplication version (from package.json): [39m[33m1.0.0[39m
+[TsAppVersion] [32mApplication name (from package.json): [39m[33mokr-frontend[39m
+[TsAppVersion] [32mWriting version module to [39m[33mD:\A实习A\BurningOKR\frontend\src\_versions.ts[39m
+[TsAppVersion] [32mFile written.[39m
+
+> okr-frontend@1.0.0 start
+> ng serve --proxy-config=proxy.conf.json --configuration local
+
+
+Initial Chunk Files                 | Names                 |  Raw Size
+main.js                             | main                  |  10.12 MB |
+vendor.js                           | vendor                |   7.90 MB |
+polyfills.js                        | polyfills             |   1.25 MB |
+styles.css, styles.js               | styles                | 590.13 kB |
+runtime.js                          | runtime               |  14.46 kB |
+
+| Initial Total         |  19.86 MB
+
+Lazy Chunk Files                    | Names                 |  Raw Size
+src_app_core_auth_auth_module_ts.js | core-auth-auth-module |  10.40 kB |
+
+Build at: 2026-05-26T03:15:09.579Z - Hash: 2289e24ec05b9621 - Time: 11299ms
+
+** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+
+
+√ Compiled successfully.

@@ -1,77 +1,79 @@
-# Code Guidelines
+﻿# 代码规范
 
-## General
+## 通用要求
 
-### Tests
+### 测试
 
-All future code contributed has to be covered by unit tests.
+后续所有新增代码都必须由单元测试覆盖。
 
-### Commit Messages
+### Commit Message
 
-We try to structure our commit messages according to [conventional commit](https://www.conventionalcommits.org/en/v1.0.0/).
+我们尽量遵循 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) 规范组织提交信息。
 
-We recommend the [conventional commit plugin](https://plugins.jetbrains.com/plugin/13389-conventional-commit) for IntelliJ.
+推荐在 IntelliJ 中安装 [conventional commit 插件](https://plugins.jetbrains.com/plugin/13389-conventional-commit)。
 
-### Comments
+### 注释
 
-When you create a comment with a todo, you have to do it in this form:
+如果你写 `todo` 注释，请使用如下格式：
 
 ```java
 // TODO (F.L. 25.06.20): <Your Todo message>
 ```
 
-``F.`` and ``L.`` stand for the first letters of your first and last name.
+其中 `F.` 和 `L.` 分别表示你的名和姓的首字母。
 
-## Frontend
+## 前端
 
 ### TS-Lint
 
-This project uses [ts-lint](https://palantir.github.io/tslint/) to enforce most of the code guidelines. You have to follow these rules in order to contribute.
-We recommend using a tslint plugin for your IDE. IntelliJ comes bundled with a tslint plugin.
+本项目使用 [ts-lint](https://palantir.github.io/tslint/) 强制执行大部分代码规范。
+如果要贡献代码，需遵循这些规则。
+建议在 IDE 安装 tslint 插件；IntelliJ 默认已内置。
 
-If your IDE does not support ts-lint, use the command ``ng lint`` to find any ts-lint errors.
+如果 IDE 不支持 ts-lint，可通过命令 `ng lint` 查找 lint 错误。
 
-### Definitions
+### 定义
 
-- Type definition: a type definition looks like this: ``export type ExampleType = string;``
+- 类型定义示例：`export type ExampleType = string;`
 
-### General Code Guidelines
+### 通用代码规范
 
-We will only cover code guidelines, which are not enforced by ts-lint here:
+这里只列出 ts-lint 不会自动强制的规则：
 
-| 👍Do | 👎Don't |
+| 建议做 | 不建议做 |
 |----|-------|
-|Use [Angular I18n](https://angular.io/guide/i18n) to display strings or messages to the user.               | Display any string without Internationalization.|
-| Try to avoid using the ``any`` type. Use generics or explicit types instead.                               | Use the ``any`` type, when you know the explicit type of the object. |
-| Always use explicit types and define new types if necessary                                                | Use anonymous objects as types |
-| Use short types and create type definitions when a type becomes to long.                                   | Use types, that are larger than the identifier and it's type parameters. |
-| Add new type definitions to the typings.d.ts file, when they are globally used.                            | Put new global type definitions anywhere else but the typings.d.ts file. |
-| Add component scoped or service scoped type definitions in the same file, as the class that depends on it. | Add component scoped or service scoped type definitions in the typings.d.ts file. |
+| 使用 [Angular I18n](https://angular.io/guide/i18n) 向用户展示文案/消息。 | 未做国际化就直接展示字符串。 |
+| 尽量避免使用 `any`，优先泛型或显式类型。 | 在明确类型已知时仍使用 `any`。 |
+| 始终使用显式类型，必要时定义新类型。 | 使用匿名对象作为类型定义。 |
+| 类型过长时，提取为较短的类型定义。 | 使用比标识符与泛型参数还冗长的类型表达式。 |
+| 全局复用的新类型定义放到 `typings.d.ts`。 | 将全局类型定义放在 `typings.d.ts` 之外。 |
+| 组件/服务局部类型定义放在对应类的同一文件中。 | 把组件/服务局部类型定义塞进 `typings.d.ts`。 |
 
-### Architecture
+### 架构约定
 
-If your component or service is used in...
+如果某个组件或服务被用于：
 
-- ... every module, declare it in the core module.
-- ... some modules, declare it in the shared module.
-- ... one module, declare it in this module.
+- 所有模块：声明在 `core` 模块。
+- 多个模块：声明在 `shared` 模块。
+- 单个模块：声明在该模块内部。
 
-## Backend
+## 后端
 
 ### Spotless
 
-We use [Spottless](https://github.com/diffplug/spotless/blob/master/plugin-gradle/README.md) to apply the [Google Java Styling](https://google.github.io/styleguide/javaguide.html) guidelines.
+我们使用 [Spotless](https://github.com/diffplug/spotless/blob/master/plugin-gradle/README.md) 应用 [Google Java Style](https://google.github.io/styleguide/javaguide.html)。
 
-We can only accept pull requests if Spotless can't find any formatting errors. So please make sure to run ```spotlessApply``` before committing.
+只有 Spotless 无格式问题时，我们才会接受 PR。
+因此请在提交前先运行 `spotlessApply`。
 
-### Migration Scripts
+### Migration 脚本
 
-When you create a migration script, which...
+当你创建的迁移脚本会：
 
-- ...drops tables,
-- ...drops columns,
-- ...deletes data,
-- ...or removes anything else...
+- 删除表
+- 删除列
+- 删除数据
+- 或移除其他内容
 
-...you have to add a comment before the SQL Statement, which justifies the deletion.
-A migration script should not create a data loss!
+请在对应 SQL 语句前添加注释，说明删除理由。
+迁移脚本不应造成数据丢失。

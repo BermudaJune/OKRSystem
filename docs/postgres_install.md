@@ -1,76 +1,73 @@
-# Install and Setup PostgreSQL (Manual installation)
+﻿# PostgreSQL 安装与配置（手动安装）
 
-## Overview
+## 概览
 
-You haven't created a database yet? Then you are at the right place!
+如果你还没有创建数据库，这份文档就是给你的。
 
-If you want an easy way, please use the [docker installation of postgres](./postgres_install_docker.md)
+如果你想用更简单的方式，请参考 [PostgreSQL Docker 安装](./postgres_install_docker.md)。
 
-1. We need to provide a separate PostgreSQL database for the backend application.
+1. 需要为后端应用单独准备一个 PostgreSQL 数据库。
+2. 还需要创建一个可连接该数据库的用户。
 
-2. Additionally, we need to create a user who can connect to the database.
-
-Note: Please remember the **username**, **password** and **database-name** you have chosen.
-You will need those in the later setup/configuration process.
+注意：请记住你设置的 **用户名**、**密码**、**数据库名**。
+后续配置会用到这些值。
 
 ## Windows
 
-1. Install PostgreSQL (Version 9.5 or higher): <https://www.enterprisedb.com/downloads/postgres-postgresql-downloads>
-    1. IMPORTANT: During installation you have to set a password for the postgres superuser and you have to choose a port number. You must remember these two values.
-2. The PostgreSQL Installer also should have installed pgAdmin4. Search for pgAdmin4 on your computer and start it. This should open your browser. You may have to set a master password for pgAdmin on the first startup.
-3. On the left, you should see your server browser.
+1. 安装 PostgreSQL（9.5 或更高）：<https://www.enterprisedb.com/downloads/postgres-postgresql-downloads>
+   1. 重要：安装时需要设置 `postgres` 超级用户密码，并选择端口号。这两个值必须记住。
+2. PostgreSQL 安装器通常会一并安装 pgAdmin4。启动 pgAdmin4 后会在浏览器打开，首次启动可能要求设置 master password。
+3. 左侧应看到服务器浏览器（Server Browser）。
 
-    ![Server Browser](./images/pgAdmin_browser.PNG)
+   ![Server Browser](./images/pgAdmin_browser.PNG)
 
-    Expand all entries as shown in the image.
-4. Right click on "Login/Group Roles" and choose "Create > Login/Group Role..."
-    1. In the general tab, set the "Name" to a meaningful name, like "admin" or "BurningOKR".
-    2. In the definition tab, set a strong password.
-    3. Click on "Save" to exit the window.
-5. In the server browser right click on "Databases" and choose "Create > Database...".
-    1. Give your database a name by filling out the database field. You can choose any name, but it is recommended to use a meaningful name like "okr" or "burningokr".
-    2. Set the owner to "admin", or the user you just created.
+   按图示展开节点。
+4. 右键 `Login/Group Roles`，选择 `Create > Login/Group Role...`。
+   1. 在 `General` 页签中填写有意义的名称，例如 `admin` 或 `BurningOKR`。
+   2. 在 `Definition` 页签设置强密码。
+   3. 点击 `Save`。
+5. 在服务器浏览器中右键 `Databases`，选择 `Create > Database...`。
+   1. 填写数据库名称，建议使用有意义的名字，如 `okr` 或 `burningokr`。
+   2. 将 Owner 设置为 `admin`（或你刚创建的用户）。
 
-        ![Create Database](./images/pgAdmin_create_database.PNG)
+      ![Create Database](./images/pgAdmin_create_database.PNG)
 
-    3. Click on "Save" to exit the window.
-6. You should now see two databases and the admin login role in your server browser:
+   3. 点击 `Save`。
+6. 你现在应能看到两个数据库和新建的登录角色：
 
    ![Two Databases and a new Login Role](./images/pgAdmin_done.PNG)
 
-   Your Database is now ready for usage. You can now close pgAdmin4.
-   You can now go back to the Installation Tutorial.
+   数据库已可使用。你可以关闭 pgAdmin4，并返回安装主流程。
 
-## Linux (Ubuntu)
+## Linux（Ubuntu）
 
-1. Install PostgreSQL:
+1. 安装 PostgreSQL：
 
-    ```bash
-    sudo apt install postgresql postgresql-contrib
-    ```
+```bash
+sudo apt install postgresql postgresql-contrib
+```
 
-2. Create the "admin" user role for BurningOKR:
+2. 为 BurningOKR 创建 `admin` 角色：
 
-    ```bash
-    sudo -u postgres createuser --interactive --pwprompt
-    ```
+```bash
+sudo -u postgres createuser --interactive --pwprompt
+```
 
-    Enter name and password for the new role, then answer with "n" to the three questions. This should look like this:
+输入新角色名称与密码，随后三个问题都回答 `n`，示例如下：
 
-    ```bash
-   Enter name of role to add: admin
-   Enter password for new role:
-   Enter it again:
-   Shall the new role be a superuser? (y/n) n
-   Shall the new role be allowed to create databases? (y/n) n
-   Shall the new role be allowed to create more new roles? (y/n) n
-   ```
+```bash
+Enter name of role to add: admin
+Enter password for new role:
+Enter it again:
+Shall the new role be a superuser? (y/n) n
+Shall the new role be allowed to create databases? (y/n) n
+Shall the new role be allowed to create more new roles? (y/n) n
+```
 
-3. Create a database for BurningOKR:
+3. 为 BurningOKR 创建数据库：
 
-    ```bash
-    sudo -u postgres createdb okr -O admin
-   ```
+```bash
+sudo -u postgres createdb okr -O admin
+```
 
-   Your Database is now ready for usage.
-   You can now go back to the Installation Tutorial.
+数据库已可使用。你可以返回安装主流程。

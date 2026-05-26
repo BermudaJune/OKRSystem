@@ -1,10 +1,10 @@
-<div class="user-pictures">
+﻿<div class="user-pictures">
   <ng-container *ngFor="let user$ of users$">
     <ngx-avatars *ngIf="user$ | async as user" [matTooltip]="user.givenName +' ' + user.surname"
                  [name]="(user.givenName || user.surname) ? user.givenName + ' ' + user.surname : null" [size]="30"
-                 [src]="user.photo ? 'data:image/jpg;base64,' + user.photo : ''" [value]="'📁'"></ngx-avatars>
+                 [src]="user.photo ? 'data:image/jpg;base64,' + user.photo : ''" [value]="'馃搧'"></ngx-avatars>
   </ng-container>
   <ngx-avatars *ngIf="countAdditionalUsers" [value]="'+'+countAdditionalUsers"
-               [matTooltip]="countAdditionalUsers+' weitere Benutzer'" matTooltipClass="multiline-tooltip"
+               [matTooltip]="countAdditionalUsers+' 位其他用户'" matTooltipClass="multiline-tooltip"
                [size]="avatarSize" bgColor="#cccccc"></ngx-avatars>
 </div>

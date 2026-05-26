@@ -3,8 +3,10 @@ import { registerLocaleData } from '@angular/common';
 import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule } from '@angular/common/http';
 import localeDe from '@angular/common/locales/de';
 import localeEn from '@angular/common/locales/en';
+import localeZh from '@angular/common/locales/zh';
 import localeDeExtra from '@angular/common/locales/extra/de';
 import localeEnExtra from '@angular/common/locales/extra/en';
+import localeZhExtra from '@angular/common/locales/extra/zh';
 import { LOCALE_ID, NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {
@@ -57,8 +59,9 @@ import { DateMapper } from './shared/services/mapper/date.mapper';
 
 registerLocaleData(localeEn, 'en', localeEnExtra);
 registerLocaleData(localeDe, 'de', localeDeExtra);
+registerLocaleData(localeZh, 'zh', localeZhExtra);
 
-const currentLanguage: string = 'de';
+const currentLanguage: string = 'zh';
 
 // (window as any).retain = [ CustomChartComponent ];
 
@@ -113,7 +116,7 @@ export function createTranslateLoader(http: HttpClient) {
         useFactory: (createTranslateLoader),
         deps: [HttpClient],
       },
-      defaultLanguage: 'de',
+      defaultLanguage: 'zh',
     }),
     MatTreeModule,
     DashboardModule,

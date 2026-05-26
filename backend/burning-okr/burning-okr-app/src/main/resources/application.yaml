@@ -28,7 +28,6 @@ system:
     issuer-uri: ''
     scopes:
       - 'profile'
-      - 'offline_access'
       - 'openid'
       - 'email'
     strict-discovery-document-validation: true

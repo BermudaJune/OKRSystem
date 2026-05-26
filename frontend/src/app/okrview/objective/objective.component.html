@@ -1,4 +1,4 @@
-<mat-expansion-panel (closed)="isPanelOpen = false" (opened)="isPanelOpen = true" [hideToggle]="true"
+﻿<mat-expansion-panel (closed)="isPanelOpen = false" (opened)="isPanelOpen = true" [hideToggle]="true"
                      class="margin-expansion-panel">
   <!-- Objective Header -->
   <mat-expansion-panel-header [collapsedHeight]="'100%'" [expandedHeight]="'100%'" class="no-padding my-panel-shadow">
@@ -61,7 +61,7 @@
 
       <button (click)="$event.stopPropagation()" *ngIf="!cycle.isCycleClosed()"
               [matMenuTriggerData]="{ objective: objective }" [matMenuTriggerFor]="optionsMenu" class="icon-spacer"
-              mat-icon-button matTooltip="Mehr Optionen zu diesem Objective">
+              mat-icon-button matTooltip="此目标的更多选项">
         <mat-icon>more_vert</mat-icon>
       </button>
 

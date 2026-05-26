@@ -1,0 +1,49 @@
+{
+  "realm": "burning-okr",
+  "enabled": true,
+  "roles": {
+    "realm": [
+      {
+        "name": "burning-okr-admin"
+      }
+    ]
+  },
+  "clients": [
+    {
+      "clientId": "burning-okr",
+      "name": "burning-okr",
+      "enabled": true,
+      "publicClient": true,
+      "protocol": "openid-connect",
+      "standardFlowEnabled": true,
+      "directAccessGrantsEnabled": true,
+      "implicitFlowEnabled": false,
+      "redirectUris": [
+        "http://localhost:4200/*"
+      ],
+      "webOrigins": [
+        "*"
+      ]
+    }
+  ],
+  "users": [
+    {
+      "username": "demo",
+      "enabled": true,
+      "firstName": "Demo",
+      "lastName": "User",
+      "email": "demo@example.com",
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "Demo123!",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "burning-okr-admin"
+      ]
+    }
+  ]
+}

@@ -21,12 +21,15 @@ export class AuthenticationService {
     private oidcConfigurationService: OidcConfigurationService,
     ) {
     this.isUserLoggedIn$.next(false); // user is not logged in on application start by default
-    this.finishedInitialisation = new Promise<boolean>(resolve => {
-      this.configure().then(() => {
+    this.finishedInitialisation = this.configure()
+      .then(() => {
         this.initialized = true;
-        resolve(true);
+        return true;
+      })
+      .catch(() => {
+        this.initialized = false;
+        return false;
       });
-    });
   }
 
   async configure(): Promise<void> {
@@ -81,15 +84,16 @@ export class AuthenticationService {
     }
 
     // retrieve target path
-    return this.getRedirectUrlFromLocalStorage();
+    const redirectUrl: string = this.getRedirectUrlFromLocalStorage(url);
+    return redirectUrl === url ? true : redirectUrl;
   }
 
   private writeRedirectUrlToLocalStorage(redirectUrl: string): void {
     localStorage.setItem('login_redirect', redirectUrl);
   }
 
-  private getRedirectUrlFromLocalStorage(): string {
-    const redirect: string = localStorage.getItem('login_redirect');
+  private getRedirectUrlFromLocalStorage(defaultUrl: string): string {
+    const redirect: string = localStorage.getItem('login_redirect') ?? defaultUrl;
     localStorage.removeItem('login_redirect');
 
     return redirect;
@@ -123,12 +127,6 @@ export class AuthenticationService {
   // TODO setLoggedIn after successful re-login
 
   private matchesAnyString(string: string, matchers: string[]): boolean {
-    matchers.forEach(matcher => {
-      if (string === matcher) {
-        return true;
-      }
-    });
-
-    return false;
+    return matchers.includes(string);
   }
 }

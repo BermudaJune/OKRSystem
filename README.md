@@ -1,47 +1,46 @@
-<p align="center"><img src="/docs/ci/Logo_burningOKR_RGB_web.png" width="35%" height="35%" alt="Burning OKR"/></p>
+﻿<p align="center"><img src="/docs/ci/Logo_burningOKR_RGB_web.png" width="35%" height="35%" alt="Burning OKR"/></p>
 
 <br/><br/><br/>
 
 # BurningOKR
 
-Burning OKR is our vision to help consistently establish focus and alignment around company goals and embed transparency into the corporate culture.
+BurningOKR 的目标是帮助团队围绕公司目标持续建立聚焦与对齐，并把透明协作融入企业文化。
 
-BurningOKR has been developed as a web application with an Angular Frontend and Java Spring Boot Backend. As a database, Postgres SQL is used.
+BurningOKR 是一个 Web 应用，技术栈为 Angular 前端 + Java Spring Boot 后端，数据库使用 PostgreSQL。
 
-## Installation
+## 安装与部署（Docker）
 
-When you have Docker and Docker-Compose installed you can proceed with the next steps, otherwise please install Docker and Docker-Compose first.  
-You can use our docker-compose file for easy use and compatibility!
+请先安装 Docker 和 Docker Compose，然后执行以下步骤：
 
-1. Download the [docker-compose-prod.yml](/docker/docker-compose-prod.yml) file
-2. Download [backend.env.sample](/docker/backend.env.sample) file and **rename** it to backend.env
-3. Download [postgres.env.sample](/docker/postgres.env.sample) file and **rename** it to postgres.env
-4. Now fill in your configurations in the two downloaded .env-files
-5. Hint: When you don't want to use Azure or a SMTP-Mailserver just comment these parts in the .env-files out and they won't be used. For more information read the [development docs](/docs/development.md).
-6. After that you are good to go and you can run `docker compose -f docker-compose-prod.yml up` in the directory where the previously downloaded files are saved.
-   Hint: When you want to reuse the console window add a `-d` to the compose command to run in detached mode.
+1. 进入项目目录下的 `docker` 文件夹。
+2. 编辑 [backend.env.sample](/docker/backend.env.sample)，填入数据库连接、认证、邮件等配置。
+3. 编辑 [postgres.env.sample](/docker/postgres.env.sample)，设置 `POSTGRES_USER`、`POSTGRES_PASSWORD`、`POSTGRES_DB`。
+4. 如果不使用 Azure 或 SMTP，可在 `backend.env.sample` 中将相关配置注释掉。
+5. 在 `docker` 目录执行：
+   - 前台运行：`docker compose up`
+   - 后台运行：`docker compose up -d`
+6. 启动后可通过 `http://localhost:4200` 访问前端页面。
 
-## Development
+## 本地开发
 
-When you want to contribute to BurningOKR or develop something for yourself please refer to the [development readme](/docs/development.md).
+如果你要参与开发或二次开发，请参考 [开发文档](/docs/development.md)。
 
 ## FAQ
 
-- **I have BurningOKR running in a Tomcat, should i migrate to Docker?**  
-  Yes you should. We will only support the docker images. When you want to use Tomcat you
-  can do so, but we will offer no support.
+- **我现在通过 Tomcat 运行 BurningOKR，是否建议迁移到 Docker？**  
+  建议迁移。项目主要维护并支持 Docker 镜像方式；你仍可使用 Tomcat，但官方不提供支持。
 
-- **I get some errors with npm install (python2, node-sass, node-gyp):**  
-  Use the LTS version of node, not the current! <https://nodejs.org/en/download/>
+- **`npm install` 出现错误（python2、node-sass、node-gyp 等）怎么办？**  
+  请使用 Node.js 的 LTS 版本，不要使用 Current 版本：<https://nodejs.org/en/download/>
 
-## Contact
+## 联系方式
 
-You can write an [E-Mail](mailto:burningokr@brockhaus-ag.de) or mention our Twitter account [@BurningOKR](https://twitter.com/BurningOkr).
+你可以发送邮件至 [burningokr@brockhaus-ag.de](mailto:burningokr@brockhaus-ag.de)，或在 Twitter 联系 [@BurningOKR](https://twitter.com/BurningOkr)。
 
-## License
+## 许可证
 
-BurningOKR was initially developed as part of a training project at [BROCKHAUS AG](http://brockhaus-ag.de) in Lünen.
+BurningOKR 最初是 [BROCKHAUS AG](http://brockhaus-ag.de) 的培训项目之一。
 
-Only an Open Source solution can unfold its true potential. That's why we released it on GitHub as an open-source project under the Apache 2.0 license.
+我们相信开源方案能释放更大价值，因此该项目以 Apache 2.0 许可证在 GitHub 开源。
 
-See [LICENSE.txt](LICENSE.txt)
+详见 [LICENSE.txt](LICENSE.txt)。

@@ -1,0 +1,965 @@
+{
+  "add-child-unit-button": {
+    "add-new-child-unit": "创建子结构",
+    "demo-privacy-policy": "<div class=\"container footer-margin\">\n\n  <div class=\"content-container\">\n    <h1>DATA PROTECTION</h1>\n\n    <div class=\"content-container\">\n      With this statement, we inform you about aspects relevant to data protection as well as the measures used to protect your rights. Brockhaus AG complies with the requirements of the German Federal Data Protection Act (BDSG) and the EU General Data Protection Regulation (EU-DSGVO).\n    </div>\n  </div>\n\n  <div class=\"content-container\">\n    <h3>1. COLLECTION AND USE OF PERSONAL DATA</h3>\n\n    <div class=\"content-container\">\n      <h4>1.1 Basic</h4>\n      The sole purpose of your data is to provide you with the most user-friendly, practical and secure Internet service possible. Personal data includes all information about personal or factual circumstances of an identified or identifiable natural person, e.g. name, address, contact details, IP addresses, data volumes transferred, etc.\n    </div>\n\n    <div class=\"content-container\">\n      <h4>1.2 Legal basis</h4>\n      a) The provision of this website with products and services: Contract initiation or contract fulfillment<br>\n      b) Requests by mail, email or fax to us: contract initiation or fulfillment<br>\n      c) Links to other offers or evaluation of accesses: legitimate interest.\n    </div>\n\n    <div class=\"content-container\">\n      <h4>1.3 Automatic processing by website operation</h4>\n      The websites are operated by a provider in Western Europe (Frankfurt, Germany), which in turn stores the accesses to the system in so-called server logs for the operation of the web offer. In doing so, the following data is usually collected: IP addresses, timestamps of accesses, names of web pages, amounts of data transferred, logouts or terminations, browser types, information from the operating system, referrer URLs. This data is not stored or evaluated by us. In the event of a justified suspicion of abuse based on concrete information, these log files can be subsequently checked.\n    </div>\n\n    <div class=\"content-container\">\n      <h4>1.4 Data input by the website user</h4>\n      You can furthermore, use our websites without the input of personal data without restriction. If we collect personal data (contact form), we will inform in each case about the purpose, scope, legality, and possible disclosure and use this only for these purposes. The input of this data by you is voluntary.\n    </div>\n  </div>\n\n  <div class=\"content-container\">\n    <h3>2. USE OF DATA</h3>\n\n    <div class=\"content-container\">\n      <h4>2.1 Use for service provision</h4>\n      We use the personal data collected and processed exclusively for the purposes of providing our services under the user agreement concluded with you and for processing payments. In doing so, we naturally comply with all applicable data protection laws, in particular the German Federal Data Protection Act/EU-DSGVO and the German Telemedia Act (TMG).\n    </div>\n\n    <div class=\"content-container\">\n      <h4>2.2 Disclosure to third parties</h4>\n      We do not pass on your personal data to third parties for marketing or similar purposes. Data will only be passed on if and insofar as this is necessary for the implementation of the user agreement, Brockhaus AG is legally obliged to do so or it should be necessary to enforce the general terms of use or other agreements concluded with you as well as our rights and claims.\n    </div>\n\n    <div class=\"content-container\">\n      <h4>2.3 Customer information by eMail</h4>\n      In the context of customer loyalty, we send current information to our customers to inform you about news and changes within our offer. This information is not to be confused with the general newsletters. If it concerns our offers and contains e.g. safety-relevant points or important information from our house, we can handle this only by eMail. Please have understanding for it.\n    </div>\n  </div>\n\n\n  <div class=\"content-container\">\n    <h3>3. COOKIES</h3>\n\n    <div class=\"content-container\">\n      Our website uses cookies to provide you with an effective experience and user-friendly handling. This makes the use of cookies necessary and justifies our legitimate interest in using this technology. Most browsers offer you the functionality to display the cookies used.\n    </div>\n   <div class=\"content-container\">\n      However, if you would like to generally prevent the use of cookies, your browser offers the option of preventing the acceptance and storage of new cookies. To find out how this works with your browser, please use the help function of the respective browser. However, we recommend that you leave the cookies function switched on, as only then will you be able to fully benefit from the high level of user comfort that we have set up for you. We do not create user profiles from this user data collected through cookies.\n    </div>\n\n    <div class=\"content-container\">\n      To edit your cookie settings, please click <a id=\"open-cookie-settings-link\" href=\"javascript:klaro.show();\">here</a>\n    </div>\n  </div>\n\n  <div class=\"content-container\">\n    <h3>4. WEBSITE EVALUATIONS AND TOOLS</h3>\n    <div class=\"content-container\">We use the following analysis tool to evaluate our websites and describe it to you as follows:</div>\n    <div class=\"content-container\">\n      This website uses Google Analytics, a web analytics service provided by Google, Inc. (\"Google\"). Google Analytics uses \"cookies\", which are text files placed on your computer, to help the website analyze how users use the site. The information generated by the cookie about your use of the website is usually transmitted to a Google server in the USA and stored there. The IP address transmitted by your browser as part of Google Analytics is not merged with other data from Google. We have also extended Google Analytics on this website with the code \"anonymizeIP\". This guarantees the masking of your IP address so that all data is collected anonymously. Only in exceptional cases will the full IP address be transferred to a Google server in the USA and shortened there.\n    </div>\n    <div class=\"content-container\">\n      On behalf of the operator of this website, Google will use this information for the purpose of evaluating your use of the website, compiling reports on website activity and providing other services relating to website activity and internet usage to the website operator. You may refuse the use of cookies by selecting the appropriate settings on your browser, however please note that if you do this you may not be able to use the full functionality of this website.\n    </div>\n    <div class=\"content-container\">\n      You can also prevent the collection of data generated by the cookie and related to your use of the website (including your IP address) to Google and the processing of this data by Google by downloading and installing the browser plugin available at the following link: <a href=\"https://tools.google.com/dlpage/gaoptout?hl=de\">https://tools.google.com/dlpage/gaoptout?hl=de</a>\n    </div>\n    <div class=\"content-container\">\n      As an alternative to the browser add-on, especially for browsers on mobile devices, you can also prevent the collection by Google Analytics by clicking on this link. An opt-out cookie will be set that prevents the future collection of your data when visiting this website. The opt-out cookie is only valid in this browser and only for our website and is stored on your device. If you delete the cookies in this browser, you must set the opt-out cookie again\n    </div>\n    <div class=\"content-container\">\n      We continue to use Google Analytics to analyze data from Double Click cookies and also AdWords for statistical purposes. If you do not wish to do so, you can disable this via the Ads Preferences Manager (<a href=\"https://www.google.com/settings/ads/onweb/?hl=de\">https://www.google.com/settings/ads/onweb/?hl=de</a>).\n    </div>\n    <div class=\"content-container\">\n      If you wish to object to the collection, you can use a plugin via the following link and install it: <a href=\"https://tools.google.com/dlpage/gaoptout?hl=de\">https://tools.google.com/dlpage/gaoptout?hl=de</a>\n    </div>\n  </div>\n\n  <div class=\"content-container\">\n    <h3>5. SECURITY</h3>\n\n\n    <div class=\"content-container\">\n      Brockhaus AG uses technical and organizational security measures to ensure that your personal data is protected against loss, incorrect modification or unauthorized access by third parties. In any case, only authorized persons have access to the personal data, and only to the extent necessary for the above-mentioned purposes. The security measures are constantly adapted to the improved technical possibilities.\n    </div>\n  </div>\n \n<div class=\"content-container\">\n    <h3>6. FURTHER INFORMATION REQUIREMENTS</h3>\n\n    <div class=\"content-container\">\n      <h4>6.1 Responsible entity</h4>\n      BROCKHAUS AG, Lünen. For full contact details, see imprint.\n    </div>\n\n    <div class=\"content-container\">\n      <h4>6.2 Data protection officer</h4>\n      P2 Consult<br>\n      Jürgen Golda<br>\n      Wilhelm-Bläser-Str. 3c, D-59174 Kamen<br>\n      Phone: +49 (0) 2307 28 74 488<br>\n      Mail: datenschutz@brockhaus-ag.de<br>\n    </div>\n\n    <div class=\"content-container\">\n      <h4>6.3. storage period</h4>\n      We store your data as long as the purpose of storage remains (requests, projects, contracts, etc.) If the purpose ceases to exist or you withdraw consent, your data will be deleted by the regular deletion run, provided that no legal retention periods must be observed.\n    </div>\n\n    <div class=\"content-container\">\n      <h4>6.4 Children</h4>\n      We will not knowingly collect or process data from children. To the extent that students make requests, we will only store the data if we have the express consent of the parent or guardian. If children's data may then be stored, we will only share it as required by law. The term \"children\" includes the definitions from national law and the legal provisions in force at our company.\n    </div>\n\n    <div class=\"content-container\">\n      <h4>6.5 Profiling</h4>\n      Profiling of your data does not take place.\n      Automatic decision-making and/or profiling with your data does not take place with us.\n    </div>\n\n    <div class=\"content-container\">\n      <h4>6.6 Your rights</h4>\n      You can contact us at any time if you want to make a disclosure, a deletion, a restriction or an objection. To do so, use the contact information provided. Requests must be made in writing so that we can clearly identify the requester.\n    </div>\n\n    <div class=\"content-container\">\n      <h4>6.7 Right of complaint</h4>\n      If you have reasonable doubts about our handling of your data, please inform us or contact the relevant supervisory authority.\n    </div>\n\n    <div class=\"content-container\">\n      <h4>6.8. Changes</h4>\n      We reserve the right to amend this privacy statement from time to time. Therefore, we recommend that you review this statement regularly.\n    </div>\n  </div>\n\n</div>\n\n\n\n\n\n\n  \n    \n\n",
+    "okr-team": "OKR 团队",
+    "substructure": "子结构"
+  },
+  "admin-settings-form": {
+    "config-names": {
+      "email-feedabck-receiver": "反馈收件人的电子邮件地址。（用逗号分隔）",
+      "email-sender": "OKR工具的电子邮件地址",
+      "frontend-base-url": "前端基本URL",
+      "max-key-results": "关键结果的最大数量",
+      "subject": {
+        "feedback": "发送电子邮件主题以获取反馈",
+        "new-user": "新用户的电子邮件主题",
+        "reset-password": "密码重置电子邮件的电子邮件主题"
+      },
+      "threshold": {
+        "green-yellow": "客观预测阈值（绿色/黄色）",
+        "yellow-red": "客观预后阈值（黄色/红色）"
+      },
+      "topic-sponsors-activated": "主题发起人已激活"
+    },
+    "confirmation-text": "通过停用所有OKR主题发起人，他们将成为各自团队中的团队成员。",
+    "confirmation-title": "停用OKR主题发起人"
+  },
+  "admin-view": {
+    "admin-panel": "管理面板",
+    "admins": "管理员",
+    "delete-dialog": {
+      "button-text": "删除",
+      "message": "从管理员中删除{{surname}} ， {{name}} ？",
+      "title": "删除管理员"
+    },
+    "icon-tooltip": "从管理员中删除{{adminName}}",
+    "placeholder": "定义新管理员",
+    "tooltip": {
+      "cannot-delete-yourself": "您无法删除自己",
+      "go-to-okr-unit-overview": "转到结构概览"
+    }
+  },
+  "api-http-error-handling": {
+    "error-counting": "{{errorCount}}个请求失败{{pluralAppendix}}",
+    "error-message": {
+      "appendix": "",
+      "more-detail": "更多详细信息",
+      "one-or-more-errors": "执行一个或多个请求时出错。",
+      "retry": "重试",
+      "single-error": "执行请求时出错。"
+    }
+  },
+  "change-password-dialog": {
+    "form": {
+      "title": "更改密码"
+    }
+  },
+  "chart-options-card": {
+    "chartType": "图表类型：",
+    "company-average": "公司平均值",
+    "teams": "团队",
+    "title": "Title:"
+  },
+  "comment-card": {
+    "edit-comment": "编辑评论",
+    "tooltip": {
+      "cancel": "取消编辑",
+      "delete-comment": "删除评论",
+      "edit-comment": "编辑评论",
+      "save-comment": "保存评论"
+    }
+  },
+  "comment-view-dialog": {
+    "close": "关闭",
+    "min-char-message": "至少需要3个字符",
+    "no-comment": "此KeyResult尚无评论",
+    "title": "评论",
+    "tooltip": {
+      "comment-to-small": "您的评论必须更长",
+      "write-new-comment": "发表新评论"
+    },
+    "write-comment": "撰写新评论"
+  },
+  "company": {
+    "error": {
+      "error": "错误",
+      "error-loading-company": "公司加载失败，可能已被删除或服务器暂不可用。",
+      "navigate-to-structure-view": "返回结构总览"
+    },
+    "loading-company": "正在加载公司...",
+    "menu": {
+      "export": "导出",
+      "export-contacts": "导出联系人"
+    },
+    "no-child-units": "当前结构下还没有子结构",
+    "substructures": "子结构",
+    "tooltip": {
+      "more-options-for-structure": "此结构的更多操作"
+    },
+    "your-teams-as-manager": "你管理的团队",
+    "your-teams-as-member": "你参与的团队"
+  },
+  "complete-init-state-form": {
+    "initialisation-completed": "完成！",
+    "initialisation-completed-message": "初始化成功完成🎉",
+    "lets-go!": "走吧！"
+  },
+  "confirmation-dialog": {
+    "cancel-text": "取消",
+    "confirm-text": "确认"
+  },
+  "convert-topic-draft-to-team": {
+    "dialog": {
+      "save-and-close-label": "转换"
+    },
+    "form": {
+      "company-option": "在{{value}}中创建团队",
+      "select": "选择父结构"
+    },
+    "title": "将主题草稿转换为团队",
+    "tooltip": {
+      "only-substructures-allowed": "团队只能在结构中创建"
+    }
+  },
+  "create-user-init-state-form": {
+    "create-your-admin-account": "创建您的管理员帐户",
+    "next": "继续",
+    "subtitle": "创建初始管理员帐户。"
+  },
+  "current-higher-than-end-validator-function": {
+    "message": "“当前”值高于最大值。"
+  },
+  "cycle-admin-card": {
+    "delete-cycle": "删除周期",
+    "deletion-dialog": {
+      "content": "从{{cycleStart}}到{{cycleEnd}}的周期",
+      "title": "删除周期？"
+    },
+    "edit-cycle": "编辑周期",
+    "hidden": "隐藏",
+    "visible": "可见"
+  },
+  "cycle-admin-container": {
+    "administration": "周期管理",
+    "create-new-cycle": "创建新周期",
+    "tooltip": {
+      "go-back-to-company": "返回结构",
+      "go-to-okr-unit-overview": "转到结构概览"
+    }
+  },
+  "cycle-creation-form": {
+    "creation-dialog": {
+      "save": "创建周期",
+      "title": "创建新周期"
+    },
+    "end-date": "结束日期",
+    "start-date": "开始日期",
+    "visibility": "可见性"
+  },
+  "cycle-edit-form": {
+    "end-date": "结束日期",
+    "name": "名称",
+    "save": "保存",
+    "start-date": "开始日期",
+    "title": "编辑周期",
+    "visibility": "可见性"
+  },
+  "edit-dashboard": {
+    "button": {
+      "create-dashboard": "创建仪表板",
+      "save-dashboard": "保存更改",
+      "add-chart": "添加图表",
+      "cancel": "取消"
+    },
+    "tooltip": {
+      "delete-chart-button": "删除图表"
+    },
+    "placeholder": {
+      "dashboard-title": "仪表板标题",
+      "chart-title": "图表标题",
+      "chart-type": "图表类型",
+      "select-teams": "选择团队"
+    },
+    "label": {
+      "select-chart-type": "选择图表类型"
+    },
+    "info": {
+      "discard-changes": "更改未保存！放弃更改？",
+      "not-valid": "仪表板无效！请确保没有必填字段为空！"
+    },
+    "line-progress": "进度-折线图",
+    "okr-toolbar": {
+      "create-dashboard": "创建仪表板",
+      "edit-dashboard": "编辑仪表板"
+    },
+    "pie-topicdraft": "主题草案概述-饼图"
+  },
+  "dashboard": {
+    "okr-toolbar": {
+      "navigate-to-structure-view": "转到结构概述",
+      "dashboard": "控制面板"
+    }
+  },
+  "dashboard-card": {
+    "created-by": "建立者：",
+    "edit-dashboard": "编辑",
+    "delete-dashboard": "删除"
+  },
+  "dashboard-overview": {
+    "wip-info-text": "此页面目前正在构建中",
+    "create-dashboard-button": "创建仪表板",
+    "okr-toolbar": {
+      "dashboard-overview": "控制面板概览"
+    }
+  },
+  "date-format-validator-function": {
+    "message": "输入的值不是DD.MM.YYYY格式的有效日期"
+  },
+  "date-not-in-the-past-validator-function": {
+    "message": "输入的日期是过去的日期"
+  },
+  "date-range-in-range-within-another-dates-validator-function": {
+    "message": "日期在另一个周期的时间范围内。"
+  },
+  "delete-dialog": {
+    "delete": "删除",
+    "general-do-you-want-to-delete": "您确定要删除{{value}}吗？"
+  },
+  "demo-footer": {
+    "credits": "旅行基金",
+    "imprint": "法律",
+    "privacy-policy": "隐私政策"
+  },
+  "demo-home": {
+    "contact": {
+      "content": "您对刻录OKR工具有疑问、建议或问题吗？欢迎您联系我们。",
+      "content-with-link": "如果你在使用中发现问题或有改进建议，请通过 <a href=\"https://github.com/BurningOKR/BurningOKR/issues/new/choose\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a> 联系我们。若你希望 BROCKHAUS AG 提供定制开发、咨询或其他服务，也可发送邮件至 <a href=\"mailto:info@brockhaus-ag.de\">info@brockhaus-ag.de</a>。",
+      "title": "如何联系我们"
+    },
+    "digitalization": {
+      "content": "使用 Burning OKR，你可以将 OKR 框架的核心要素数字化落地，并在团队之间建立透明协作。各团队可在系统中管理自己的目标与关键结果，实时展示进度与成果，同时清晰呈现公司层级结构。",
+      "title": "将整个OKR流程数字化"
+    },
+    "documentation": "文件",
+    "features": {
+      "content": "我们的OKR工具使您能够以全面的方式将OKR流程及其结果指标数字化，包括所有必要的功能。详细地说，刻录OKR提供了...",
+      "perks-list": "<li>支持 Azure Active Directory 或本地用户管理进行认证</li>\n        <li>支持多公司（多租户）管理</li>\n        <li>支持周期、组织结构、团队、目标与关键结果的管理</li>\n        <li>提供目标与关键结果进度可视化</li>\n        <li>支持灵活个性化配置（如团队命名、关键结果数量上限等）</li>\n        <li>支持导出为 Excel 表格</li>",
+      "title": "创新功能"
+    },
+    "free-and-open-source": {
+      "content": "本应用对企业和个人用户均可免费使用。你也可以随时在 <a href=\"https://github.com/BurningOKR/BurningOKR\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a> 查看开源代码并按需定制。我们也乐于为你提供支持，欢迎将你的改动以 Pull Request 的形式贡献给社区。",
+      "title": "我们为您提供的免费优惠"
+    },
+    "further-information": {
+      "content": "如需进一步了解 OKR 框架，请访问 <a href=\"https://www.brockhaus-ag.de/themen/AGILEVERSITY#themenAgileversity_accordionImage_okr\" target=\"_blank\" rel=\"noopener noreferrer\">BROCKHAUS AG 的 AGILEVERSITY 页面</a>。",
+      "title": "详细了解OKR框架和OKR流程"
+    },
+    "github": "GitHub",
+    "installation": {
+      "content": "刻录OKR很容易在各种平台上安装。我们提供有关如何安装...的教程",
+      "list": "<li>Docker</li>\n<li>Tomcat Web Server（即将支持）</li>",
+      "title": "易于安装"
+    },
+    "playground": "游乐场",
+    "target-management": {
+      "content": "Objectives 和 Key Results 以周期方式运行。你可以按需设计周期名称、时长与内容，并通过目标与关键结果进度条持续跟踪 OKR 团队的产出。",
+      "title": "管理和控制您的公司目标"
+    },
+    "visions": {
+      "content": "敏捷 OKR 框架通过结构化目标设定，帮助你实现战略业务目标。短周期与可量化目标有助于定期复盘结果，让你能基于新信息快速调整业务方向。Burning OKR 为此提供了强大且易用的开源工具支持。",
+      "title": "借助OKR实现愿景"
+    },
+    "welcome": {
+      "content": "Burning OKR 帮助你达成企业战略目标，并推动敏捷、透明的组织文化。该开源 OKR 工具基于 BROCKHAUS AG 在 OKR 框架上的多年实践经验打造。",
+      "title": "欢迎使用刻录OKR ！"
+    }
+  },
+  "demo-imprint": "<div class=\"container footer-margin\">  <h1>IMPRINT</h1>\n  <h4>Imprint according to § 5 TMG:</h4>\n  <div class=\"content-container\">    <h4>BROCKHAUS AG</h4>    Pierbusch 17<br>    44536 Lünen<br>    Germany<br>  </div>\n  <div class=\"content-container\">    <h4>LOCATION DORTMUND</h4>    Emil-Figge-Strasse 85<br>    44227 Dortmund<br>    Germany<br>  </div>\n  <div class=\"content-container\">    <h4>LOCATION HAMBURG </h4>    Willy-Brandt-Strasse 23-25<br>    20457 Hamburg<br>    Germany<br>  </div>\n\n  <div class=\"content-container\">    <b>Phone:</b> +49 (0) 231 98 75-0<br>    <b>Fax:</b> +49 (0) 231 98 75-540<br>    <b>E-mail:</b> info@brockhaus-ag.de<br>    <b>Website:</b> www.brockhaus-ag.de<br>\n    <br>\n    <b>Authorized representative:</b> Matthias Besenfelder<br>    Chairman of the Supervisory Board: Dr. Adam Spalek<br>\n    <br>\n    <b>Register Court:</b>Amtsgericht Dortmund<br>    <b>Register number:</b> HRB 27027<br>    <b>Sales tax identification number:</b> DE 299350276<br>\n    <br>\n    <b>Responsible for the content according to § 55 RStV:</b> Matthias Besenfelder<br>\n    <br>\n    <b>Disclaimer:</b> Despite careful control of the content, we do not assume any liability for the content of external links. The operators of the linked pages are solely responsible for their content.<br>  </div>\n</div>",
+  "demo-main-view": {
+    "playground": "游乐场"
+  },
+  "demo-warning": {
+    "abort-button": "取消",
+    "database-deletion-text": "每隔2小时，演示操场上的所有数据都会被删除。为此将显示倒计时。",
+    "database-deletion-title": "数据删除",
+    "explanation": "您现在正在进入燃烧OKR演示的操场。",
+    "good-vibes-only-text": "请勿在演示游乐场上传播负面内容。",
+    "good-vibes-only-title": "# GoodVibesOnly",
+    "headline": "用户生成的内容",
+    "playground-button": "前往游乐场",
+    "title": "游乐场",
+    "user-generated-text": "Demo Playground上的所有内容均由用户生成。我们对此内容不承担任何责任。",
+    "user-generated-title": "用户生成的内容"
+  },
+  "department-description-edit-form": {
+    "edit-description": "编辑描述"
+  },
+  "department-tab-description": {
+    "beginning": "开始时间：",
+    "delimitation": "分界线：",
+    "dependencies": "依赖关系：",
+    "description": "说明",
+    "edit-description": "编辑描述",
+    "handover-plan": "交接计划：",
+    "initiator": "发起人：",
+    "resources": "所需资源：",
+    "stakeholder": "利益相关者：",
+    "startteam": "开始团队：",
+    "to": "有助于：",
+    "tooltip": {
+      "no-edit-rights": "仅OKR主控形象允许编辑描述"
+    },
+    "topic": "主题："
+  },
+  "department-tab-task-card": {
+    "delete": "删除",
+    "task-board-loading": "正在加载"
+  },
+  "department-tab-task-form": {
+    "assigned-user-ids": "编辑",
+    "description": "说明",
+    "dialog": {
+      "create": "建立",
+      "edit": "编辑",
+      "title": "{{editOrCreateText}}任务"
+    },
+    "no-parent-key-result": "无父密钥结果",
+    "select-parent-key-result": "选择父密钥结果",
+    "task-state": "州",
+    "title": "标题",
+    "revisions": {
+      "date": "日期",
+      "user": "用户",
+      "field": "字段",
+      "old-value": "旧值",
+      "new-value": "新值",
+      "fields": {
+        "title": "标题",
+        "description": "说明",
+        "taskState": "州",
+        "assignedUserIds": "编辑",
+        "assignedKeyResult": "关键结果"
+      }
+    }
+  },
+  "department-tab-taskboard": {
+    "columns": "列",
+    "swimlanes": "泳道",
+    "add-button": {
+      "create-new-task": "创建任务",
+      "tooltip": "WebSocket-Connection已中断"
+    },
+    "deletion-dialog": {
+      "button-text": "删除",
+      "message": "您确定要删除任务“{{title}}”吗？",
+      "title": "删除任务"
+    },
+    "task-board-headline": "任务",
+    "websocket-not-connected": "无法建立Websocket连接。目前不采用更改。"
+  },
+  "department-tab-team": {
+    "define-o-k-r-master": "未定义OKR Master",
+    "define-topic-sponsor": "未定义OKR主题发起人",
+    "deletion-dialog": {
+      "button-text": "删除",
+      "message": "您确定要执行此操作吗？此用户将失去此团队的经理权限。",
+      "message-member": "是否要从团队中删除此成员？用户将失去在此团队中的会员权限。",
+      "title-master": "删除OKR主题发起人",
+      "title-member": "删除成员",
+      "title-sponsor": "删除OKR主文件"
+    },
+    "members-of-unit": "结构成员",
+    "no-members-defined": "未定义团队成员",
+    "o-k-r-master": "OKR大师",
+    "o-k-r-topic-sponsor": "OKR主题发起人",
+    "placeholder": {
+      "member": "添加新成员",
+      "okr-master": "添加OKR主文件",
+      "topic-sponsor": "添加主题发起人"
+    },
+    "team-member": "团队成员"
+  },
+  "dialog-component": {
+    "cancel": "取消",
+    "date-range-within-another-date-range": "开始和结束日期不得与任何其他周期范围重叠。",
+    "save": "保存",
+    "start-date-not-before-end-date": "开始日期不能早于结束日期。",
+    "start-equals-end": "起始值不得与目标值相同。"
+  },
+  "disabled-in-demo-version": "⚠ 在演示版中禁用",
+  "error": {
+    "error-id": "错误ID ：",
+    "error-list": "错误列表",
+    "tooltip": {
+      "go-to-okr-unit-overview": "转到结构概览",
+      "navigate-to-previous": "返回上一页"
+    }
+  },
+  "feedback-button": {
+    "button-icon": {
+      "tooltip": "反馈"
+    },
+    "successful-send": {
+      "message": "反馈已发送"
+    }
+  },
+  "feedback-form": {
+    "dialog": {
+      "save-button": "发送反馈",
+      "title": "提交反馈"
+    },
+    "form-field": {
+      "feedback": "反馈内容",
+      "name": "姓名"
+    }
+  },
+  "import-csv-dialog": {
+    "amount-of-entries-loaded": "条目已加载。",
+    "confirmation": {
+      "text": "此操作将添加所有{{list_length}}用户。",
+      "title": "创建{{list_length}}用户。"
+    },
+    "csv-file": "CSV文件",
+    "department": "部门",
+    "description": "此功能允许您导入具有CSV文件的用户。CSV文件必须按以下顺序提供用户数据：名字、姓氏、电子邮件、职务、部门",
+    "duplicate-email-adresses-warning": "此记录中有重复的电子邮件地址。",
+    "email": "电子邮箱",
+    "job-title": "职务",
+    "name": "名称",
+    "to-many-entries-warning": "至少一个条目有太多列。"
+  },
+  "key-result-form": {
+    "amount-units": "金额",
+    "current": "当前",
+    "description": "说明",
+    "dialog": {
+      "create": "创建",
+      "edit": "编辑"
+    },
+    "key-result": "关键结果",
+    "start": "开始",
+    "target": "目标",
+    "unit": "单位"
+  },
+  "key-result-milestone-form": {
+    "add-button": "添加里程碑",
+    "name-*": "名称",
+    "toggle": "里程碑有效",
+    "tooltip": {
+      "delete-button": "删除里程碑"
+    },
+    "value-input": "目标值"
+  },
+  "keyresult": {
+    "deletion-dialog": {
+      "button-text": "删除KeyResult",
+      "message": "从目标中删除KeyResult {{number}}. {{keyResultTitle}} ？",
+      "title": "清除"
+    },
+    "menu": {
+      "edit-key-result": "编辑KeyResult",
+      "keyresult": "删除关键结果",
+      "move-key-result-down": "下移KeyResult",
+      "move-key-result-up": "上移KeyResult"
+    },
+    "tooltip": {
+      "adjust-progress": "调整进度",
+      "comments-for-this-key-result": "关于此KeyResult的评论",
+      "more-options": "此KeyResult的更多选项"
+    }
+  },
+  "language-picker": {
+    "language": {
+      "english": "英语",
+      "german": "德语",
+      "chinese": "中文"
+    },
+    "select-trigger-text": "选择语言"
+  },
+  "login": {
+    "button": "忘记密码",
+    "caps-lock-on": "大写锁定键处于活动状态",
+    "email": "电子邮箱",
+    "error-invalid-grant": "密码或用户名无效",
+    "error-unauthorized": "未找到用户名",
+    "password": "密码"
+  },
+  "logout": {
+    "logged-out": "您已成功注销。",
+    "redirect": "您很快就会被重定向。"
+  },
+  "main-view": {
+    "navigation-sidebar": {
+      "cycle-not-started": "此周期尚未开始，可以在准备过程中进行处理。",
+      "cycle-started": "此周期已过期，因此已关闭-只能在有限的范围内进行处理。"
+    },
+    "tooltip": {
+      "adjust-cycleperiod": "调整观察周期",
+      "go-to-structure-view": "转到结构概述",
+      "toogle-navigvation": "显示/隐藏导航菜单"
+    }
+  },
+  "max-length-validator": {
+    "message": "超出最大字符数"
+  },
+  "navigation-list-entry": {
+    "tooltip": {
+      "is-substructure": "这是一个子结构",
+      "is-team": "这是一个团队",
+      "you-are-manager": "您是此结构的经理",
+      "you-are-member": "您是此结构的成员"
+    }
+  },
+  "no-mail-information": {
+    "a-a-d": "如果使用Azure Active Directory进行用户管理，则以下功能不可用：",
+    "back-to-home": "返回首页",
+    "create-user-mails": "创建新用户时发送邮件",
+    "feedback": "发送反馈",
+    "info": "这可能会限制应用程序的可用性。",
+    "local": "如果使用BurningOKR的本地用户数据库进行用户管理，则以下功能不可用：",
+    "no-smtp": "未配置SMTP",
+    "password-reset-mails": "重置密码时发送邮件",
+    "title": "未找到SMTP配置。",
+    "tooltip": {
+      "go-to-okr-unit-overview": "转到结构概览"
+    }
+  },
+  "objective": {
+    "deletion-dialog": {
+      "button-text": "删除",
+      "message": "删除目标{{number}}。{{objectiveTitle}} ？",
+      "title": "删除目标"
+    },
+    "menu": {
+      "comment-objective": "评论目标",
+      "delete-objective": "删除目标",
+      "disable-objective": "将目标设置为未激活",
+      "edit-objective": "编辑目标",
+      "enable-objective": "将目标设置为活动",
+      "move-down-objective": "下移目标",
+      "move-up-objective": "上移目标"
+    },
+    "objective-isnt-active": "此目标未激活",
+    "tooltip": {
+      "bad-progress": "目标进展缓慢",
+      "expand-objective": "展开目标",
+      "good-progress": "目标取得了良好的进展",
+      "progress-can-be-better": "目标应改善进度",
+      "subordinate": {
+        "": "从属目标数量"
+      }
+    }
+  },
+  "objective-contents": {
+    "define-new-key-result": "添加KeyResult",
+    "key-results": "主要结果",
+    "load-key-results": "加载KeyResults...",
+    "no-key-result-found": "此目标尚无KeyResults。",
+    "parent-objective": "父级目标",
+    "tooltip": {
+      "navigate-to-unit": "转到此目标的结构"
+    }
+  },
+  "objective-form": {
+    "annotation": "备注",
+    "contact-person": "联系人",
+    "description": "说明",
+    "dialog": {
+      "create": "建立",
+      "edit": "编辑",
+      "title": "{{editOrCreateText}}目标"
+    },
+    "no-contact-person": "无联系人",
+    "no-parent-objective": "无父目标",
+    "objective-is-active-in-process": "当前周期正在积极处理目标。",
+    "select-parent-objective": "选择父目标"
+  },
+  "okr-child-unit": {
+    "deletion-dialog": {
+      "button-text": "删除",
+      "message": "所有下属目标、关键结果和评论也将被删除。",
+      "title": "删除{{name}} ？"
+    },
+    "description": "说明",
+    "empty-label": "-",
+    "error-info-label": "信息",
+    "load-department": "装载部门",
+    "load-department-failed": "加载失败",
+    "load-department-failed-button": "转到下一个更高的结构",
+    "load-department-failed-info-text": "无法加载结构。它可能已被其他用户删除，或者服务器没有响应。",
+    "loading": "加载中…",
+    "menu": {
+      "contacts": "导出联系人",
+      "delete-unit": "删除结构",
+      "disable-unit": "设置结构未激活",
+      "editchild-unit": "编辑结构",
+      "enable-unit": "设置结构激活",
+      "export": "导出"
+    },
+    "overview": "概述",
+    "please-wait": "请稍候",
+    "substructures": "子结构",
+    "task-board-headline": "任务",
+    "team-member": "团队成员",
+    "tooltip": {
+      "cannot-delete-unit": "由于存在子结构，无法删除！",
+      "more-options": "此结构的更多选项"
+    },
+    "unit-not-active": "此结构未激活"
+  },
+  "okr-child-unit-form": {
+    "description": "标签",
+    "dialog": {
+      "create": "创建{{label}}",
+      "edit": "编辑{{label}}"
+    },
+    "header": "有效",
+    "name-*": "名称"
+  },
+  "okr-child-unit-overview-tab": {
+    "create-new-objective": "创建目标",
+    "load-objective": "加载目标...",
+    "no-objectives": "此结构尚无目标。"
+  },
+  "okr-child-unit-preview-button": {
+    "load": "加载",
+    "tooltip": {
+      "list-child-unit": "这种结构的子结构",
+      "list-objectives": "此结构的目标",
+      "not-active": "此结构未激活",
+      "show-department": "显示结构"
+    }
+  },
+  "okr-child-unit-tab": {
+    "no-child-unit": "该结构还没有任何子结构",
+    "substructures": "子结构"
+  },
+  "okr-toolbar": {
+    "admin-icon": {
+      "tooltip": {
+        "is-admin": "授权为管理员"
+      }
+    },
+    "main-page": "首页",
+    "menu": {
+      "admin-panel-text": "管理面板",
+      "change-password-text": "修改密码",
+      "cycle-administration-text": "周期管理",
+      "dashboard-overview": "看板总览",
+      "language-picker": "选择语言",
+      "logout-text": "退出登录",
+      "settings-text": "设置",
+      "topic-drafts-text": "主题草稿",
+      "user-managment-text": "用户管理"
+    },
+    "return-to-demo-text": "首页",
+    "tooltip": {
+      "menu": "菜单"
+    },
+    "warning": {
+      "no-smtp-link": "这可能会严重影响应用可用性。",
+      "no-smtp-text": "警告：尚未配置 SMTP 服务器。"
+    }
+  },
+  "okr-topic-description-form": {
+    "beginning": "开始",
+    "contributes-to": "有助于",
+    "delimitation": "分界线",
+    "dependencies": "依赖项",
+    "description": "说明",
+    "handover-plan": "交接计划",
+    "header": "主题",
+    "initiator": "发起人",
+    "no-initiator": "无启动器",
+    "resources": "所需资源",
+    "stakeholder": "利益相关者",
+    "start-team": "开始团队"
+  },
+  "okr-unit-card": {
+    "delete-company-has-child-unit-warning": "{{value}} 仍然包含子结构",
+    "general-delete-dialog-title": "删除{{value}}？",
+    "label": "删除公司",
+    "mat-card-actions": {
+      "delete": "删除结构",
+      "edit-name": "编辑姓名",
+      "admin-required": "需要管理员权限",
+      "tooltip": {
+        "delete-unit": "删除结构",
+        "edit-unit-name": "编辑结构名称"
+      }
+    },
+    "mat-card-subtitle": {
+      "unit-structure": "公司架构"
+    }
+  },
+  "okr-unit-dashboard": {
+    "add-unit": "新建结构",
+    "okr-toolbar": {
+      "unit-overview": "结构总览"
+    }
+  },
+  "okr-unit-form": {
+    "create": "创建{{值}}",
+    "default-label": {
+      "structure": "下部结构",
+      "team": "OKR团队"
+    },
+    "placeholder": {
+      "label": "标签",
+      "name": "姓名"
+    },
+    "save": "保存{{值}}",
+    "structure": "结构"
+  },
+  "password-form": {
+    "caps-lock-on": "大写锁定键处于活动状态",
+    "error-message-previous-password-required": "必须输入之前的密码。",
+    "error-message-previous-password-wrong": "之前的密码输入错误。",
+    "new-password": "新密码",
+    "new-password-invalid": "密码必须至少包含 7 个字符",
+    "new-password-repetition": "重复新密码",
+    "passwords-do-not-match": "条目不匹配。",
+    "previous-password": "以前的密码"
+  },
+  "passwords-match-validator-function": {
+    "message": "密码不匹配。"
+  },
+  "required-validator": {
+    "message": "必填字段"
+  },
+  "reset-countdown": {
+    "until-next": "重置数据："
+  },
+  "reset-password": {
+    "email": "电子邮箱",
+    "error-invalid-email": "电子邮件无效",
+    "password-reset-email-has-been-send-out": "用于重置密码的电子邮件已发送至您提供的电子邮件地址。",
+    "password-reset-title": "刻录OKR——重置密码",
+    "reset-password": "重置密码"
+  },
+  "set-azure-admin-init-state-form": {
+    "other-user-notice": "如果您想将其他用户设置为初始管理员，请使用他们的帐户登录。",
+    "set-admin-button": "将此用户设置为管理员",
+    "set-admin-logout-button": "退出",
+    "set-azure-admin-subtitle": "以下用户将成为初始管理员。",
+    "set-azure-admin-title": "设置管理员"
+  },
+  "set-oauth-client-details-form": {
+    "access-token-validity": "访问令牌的持续时间（以秒为单位）",
+    "client-id": "客户ID",
+    "client-secret": "客户秘密",
+    "explanation": "如需使用本地用户数据库，必须先配置 OAuth。请确保 Client-ID 和 Client-Secret 与其他应用唯一且不重复。表单字段已预填推荐值，除非你非常清楚其影响，否则不建议修改。",
+    "next": "继续",
+    "only-do-this-if-you-are-a-nerd-warning": "激活表格。 ⚠ 仅当您知道自己在做什么时才这样做 ⚠",
+    "please-hang-on-the-server-is-beeing-configured": "服务器正在配置中，请稍等。",
+    "refresh-token-validity": "刷新令牌的持续时间（以秒为单位）",
+    "timeout": {
+      "error-message": "服务器的配置时间太长。请检查服务器并重新加载页面。",
+      "error-message-action": "好的"
+    },
+    "title": "配置身份验证",
+    "web-server-redirect-uri": "Web 服务器重定向 URI"
+  },
+  "set-password": {
+    "new-password": "新密码",
+    "new-password-invalid": "密码必须至少包含 7 个字符",
+    "new-password-repetition": "重复新密码",
+    "password-changed-message": "密码修改成功✅",
+    "passwords-do-not-match": "条目不匹配。",
+    "reset-password": "重置密码",
+    "set-new-password-instruction": "设置新密码",
+    "toolbar-title": "刻录OKR-修改密码"
+  },
+  "settings-form": {
+    "admin-settings": "管理设置",
+    "cancel-button-text": "取消",
+    "save": "保存",
+    "settings": "设置"
+  },
+  "start-date-before-end-date-validator-function": {
+    "message": "开始日期晚于结束日期"
+  },
+  "start-not-equal-end-validator-function": {
+    "message": "开始日期晚于结束日期"
+  },
+  "status-dot": {
+    "approved": "得到正式认可的",
+    "draft": "草稿",
+    "rejected": "被拒绝",
+    "submitted": "已提交"
+  },
+  "task-board-swimlane-view-helper": {
+    "no-keyresult-title": "无关键结果"
+  },
+  "taskboard-state-column-view": {
+    "default-state-text": "未分配"
+  },
+  "topic-draft-action-button": {
+    "admin-initiator-tooltip": "只有管​​理员或发起人可以提交或撤回提交",
+    "approving-status-and-user": "状态必须为“待处理”，并且只有管理员或审核员可以接受或拒绝",
+    "capitalised-approve": "批准",
+    "capitalized-reject": "拒绝",
+    "capitalized-submit": "提交",
+    "comments": {
+      "heading": "主题稿"
+    },
+    "comments-text": "评论",
+    "create-team": "转换为团队",
+    "delete": {
+      "button-text": "删除",
+      "message": "您确定要删除草稿主题 {{name}} 吗？",
+      "title": "删除主题草稿"
+    },
+    "delete-text": "删除",
+    "edit": "编辑",
+    "edit-tooltip": {
+      "status": "状态必须为“已提交”或“草稿”",
+      "status-and-user": "状态必须为“已提交”或“草稿”，并且只有管理员或发起人可以编辑",
+      "user": "只有管​​理员或发起人可以编辑"
+    },
+    "no-permission": "只有管​​理员或审核员才能批准或拒绝",
+    "not-approved": "主题草案未获批准",
+    "snackbar": {
+      "ok": "好的",
+      "submit": "您的主题草稿已发送以供审核。"
+    },
+    "state-submitted-tooltip": "状态必须为“已提交”",
+    "status-submitted": "状态必须为“已提交”，以便可以撤回提交",
+    "status-submitted-user": "状态必须为“已提交”，并且您必须是管理员或发起人才能撤回提交",
+    "tooltip": {
+      "feature-coming-soon": "",
+      "header": "评论",
+      "only-admin-or-initiator-permission-to-delete": "只有管​​理员或发起人才能删除该主题草稿"
+    },
+    "user-not-admin": "需要管理员权限",
+    "withdraw-approval": "撤回批准",
+    "withdraw-rejection": "撤回拒绝",
+    "withdraw-submit": "撤回提交"
+  },
+  "topic-draft-creation-form": {
+    "dialog-title": "创建主题草稿"
+  },
+  "topic-draft-details-dialogue": {
+    "button": {
+      "close": "关闭",
+      "edit": "编辑",
+      "tooltip-no-permission": "只有主题草稿的发起者或管理员可以编辑它。为此，主题草案不得已被批准或拒绝。"
+    },
+    "field": {
+      "begin": "开始",
+      "contribution": "付款于",
+      "delimitation": "分界线",
+      "dependencies": "依赖项",
+      "description": "说明",
+      "handover": "交接计划",
+      "initiator": "发起人",
+      "no-team-members": "没有可用的团队成员",
+      "resources": "资源",
+      "stakeholder-team": "利益相关者团队",
+      "start-team": "首发阵容",
+      "topic": "主题"
+    },
+    "status": {
+      "approved": "得到正式认可的",
+      "rejected": "被拒绝",
+      "submitted": "已提交",
+      "template": "模板",
+      "title": "地位"
+    },
+    "title": "已提交主题草稿"
+  },
+  "topic-draft-edit-dialogue": {
+    "title": "编辑主题草稿"
+  },
+  "topic-draft-list": {
+    "column": {
+      "name": "名称",
+      "start": "开始",
+      "submitted": "提交者"
+    },
+    "no-new-topic-drafts": "没有新的主题草稿"
+  },
+  "topic-drafts": {
+    "add-topic-draft-button": "添加主题草稿",
+    "home-button": {
+      "tooltip": "转到结构概览"
+    },
+    "initiator-table-header": "主题",
+    "navbar": {
+      "title": "已提交主题草稿",
+      "title-short": "主题稿"
+    }
+  },
+  "user-autocomplete-input": {
+    "label": "用户输入"
+  },
+  "user-dialog": {
+    "reset-password": "重置密码",
+    "snackbar": {
+      "message": "密码已成功重置。",
+      "ok": "好的"
+    }
+  },
+  "user-form": {
+    "department": "部门",
+    "email": "电子邮箱",
+    "error-invalid-email": "电子邮件无效",
+    "error-used-email": "该电子邮件已被其他用户使用。",
+    "first-name": "名字",
+    "job-title": "职务",
+    "last-name": "姓"
+  },
+  "user-management": {
+    "active-table-header": "有效",
+    "add-new-user": "创建用户",
+    "edit-user-header-popup": "编辑用户",
+    "reset-user-password": "重置密码",
+    "admin-table-header": "行政",
+    "checkbox": "显示已停用的用户",
+    "department-table-header": "部门",
+    "email": "电子邮箱",
+    "import-users": "导入用户",
+    "job-title-table-header": "职务",
+    "name": "名称",
+    "tooltip": {
+      "activate-user": "激活用户",
+      "deactivate-user": "禁用用户",
+      "edit-user": "编辑用户",
+      "go-to-okr-unit-overview": "转到结构概览",
+      "import-users-from-csv": "从 CSV 导入用户"
+    },
+    "user-management-toolbar-title": "用户管理",
+    "deactivate-user-header-popup": "停用用户",
+    "deactivate-user-text-popup": "你确定要停用 {{ value }} 吗？停用后该用户将无法继续使用应用，并会在下一个周期切换时自动从所有团队移除。",
+    "reactivate-user-header-popup": "重新激活用户",
+    "reactivate-user-text-popup": "您想重新激活 {{ value }} 吗？然后，用户可以再次充分利用该应用程序。"
+  },
+  "user-minibutton": {
+    "loading-user": "加载用户...",
+    "tooltip": {
+      "remove-member": "从团队中删除用户"
+    }
+  },
+  "user-selector": {
+    "no-entries": "没有找到用户。",
+    "placeholder": "搜索"
+  },
+  "user-selector-multi": {
+    "no-entires": "没有找到用户。",
+    "placeholder": "搜索"
+  },
+  "user-settings": {
+    "default-company": "默认公司",
+    "default-team": "默认团队",
+    "no-company": "没有公司",
+    "no-team": "没有团队"
+  },
+  "validation-error": {
+    "default-error-message": "不是有效值。"
+  },
+  "version-form": {
+    "change-log": "变更日志",
+    "close": "关闭"
+  }
+}

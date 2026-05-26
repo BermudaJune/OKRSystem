@@ -1,38 +1,40 @@
-# Install and Setup PostgreSQL (Docker)
+﻿# PostgreSQL 安装与配置（Docker）
 
-## Overview
+## 概览
 
-You haven't created a database yet? Then you are at the right place!
+如果你还没有创建数据库，这份文档就是给你的。
 
-After the installation you will have an running postgres instance with the following configuration:
+安装后你会得到一个正在运行的 PostgreSQL 实例，默认配置如下：
 
-* Host: localhost
-* Port: 5432
-* User: postgres
-* Password: 4c0K8sJGcxIercJDlmhs
+- Host：`localhost`
+- Port：`5432`
+- User：`postgres`
+- Password：`4c0K8sJGcxIercJDlmhs`
 
 ## Windows
 
-1. Install Docker
-2. Execute the following command:
+1. 安装 Docker
+2. 执行以下命令：
 
-    `docker run -p 5434:5432 --name okr-postgres -e POSTGRES_PASSWORD=4c0K8sJGcxIercJDlmhs -e POSTGRES_DB=okr -d postgres`
+`docker run -p 5434:5432 --name okr-postgres -e POSTGRES_PASSWORD=4c0K8sJGcxIercJDlmhs -e POSTGRES_DB=okr -d postgres`
 
-3. The Database is now ready for usage.
+3. 数据库现在已经可以使用。
 
-With the credentials mentioned above you can now connect to the database using IntelliJ, Datagrip or pgAdmin.
-Done!
+使用上述凭据，你可以通过 IntelliJ、DataGrip 或 pgAdmin 连接数据库。
+完成。
 
-### Re-Starting Container
-The container won't auto start.
-To start the container enter `docker start okr-postgres`
+### 重新启动容器
 
-To stop the container enter `docker stop okr-postgres`
+该容器默认不会随系统自动启动。
 
-### Recreating Container
-If you want to recreate the container, just do the following:
+- 启动容器：`docker start okr-postgres`
+- 停止容器：`docker stop okr-postgres`
+
+### 重新创建容器
+
+如需重建容器，执行：
 
 1. `docker rm okr-postgres -f`
 2. `docker run -p 5434:5432 --name okr-postgres -e POSTGRES_PASSWORD=4c0K8sJGcxIercJDlmhs -e POSTGRES_DB=okr -d postgres`
 
-You can now go back to the Installation Tutorial.
+然后可返回安装主流程。

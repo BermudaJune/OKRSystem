@@ -11,6 +11,7 @@ import { map, startWith } from 'rxjs/operators';
 })
 export class OkrTranslationHelperService {
 
+  private readonly supportedLanguages: string[] = ['en', 'de', 'zh'];
   private currentLanguage$: Observable<string> = of('');
 
   constructor(
@@ -22,6 +23,7 @@ export class OkrTranslationHelperService {
   }
 
   initializeTranslationOnStartup(): void {
+    this.translateService.addLangs(this.supportedLanguages);
     // this language will be used as a fallback when a translation isn't found in the current language
     this.translateService.setDefaultLang('en');
     // the lang to use, if the lang isn't available, it will use the current loader to get them
@@ -30,19 +32,17 @@ export class OkrTranslationHelperService {
   }
 
   changeCurrentLanguageTo(language: string): void {
-    if (this.translateService.getLangs().includes(language)) {
-      this.changeToLanguage(language);
-    }
+    const normalizedLanguage: string = this.normalizeLanguage(language);
+    this.changeToLanguage(normalizedLanguage);
   }
 
   getInitialLanguage(): string {
     if (this.cookieHelper.isCookieSet('language')) {
-      return this.cookieHelper.getCookieValue('language');
-    } else if (this.locale !== undefined) {
-      return getLocaleId(this.locale);
-    } else {
-      return 'en';
+      return this.normalizeLanguage(this.cookieHelper.getCookieValue('language'));
     }
+
+    const browserLanguage: string = navigator.language || this.locale || 'en';
+    return this.normalizeLanguage(getLocaleId(browserLanguage));
   }
 
   getCurrentLanguage$(): Observable<string> {
@@ -53,5 +53,20 @@ export class OkrTranslationHelperService {
     this.translateService.use(language);
     this.dateAdapter.setLocale(language);
     this.cookieHelper.setCookieValue('language', language, 30, '/');
+  }
+
+  private normalizeLanguage(language: string): string {
+    if (!language) {
+      return 'en';
+    }
+
+    const normalizedLanguage: string = language.toLowerCase();
+    if (normalizedLanguage.startsWith('zh')) {
+      return 'zh';
+    }
+    if (normalizedLanguage.startsWith('de')) {
+      return 'de';
+    }
+    return 'en';
   }
 }

@@ -328,7 +328,7 @@
     "select-parent-key-result": "Übergeordnetes Key Result auswählen",
     "task-state": "Status",
     "title": "Titel",
-  "revisions": {
+    "revisions": {
       "date": "Datum",
       "user": "Benutzer",
       "field": "Feld",
@@ -341,7 +341,8 @@
         "assignedUserIds": "Bearbeiter",
         "assignedKeyResult": "Key result"
       }
-    }},
+    }
+  },
   "department-tab-taskboard": {
     "columns": "Spalten",
     "swimlanes": "Schwimmbahnen",
@@ -471,7 +472,8 @@
   "language-picker": {
     "language": {
       "english": "Englisch",
-      "german": "Deutsch"
+      "german": "Deutsch",
+      "chinese": "Chinesisch"
     },
     "select-trigger-text": "Sprache wählen"
   },

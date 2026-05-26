@@ -1,0 +1,12 @@
+services:
+  backend:
+    build:
+      context: ../backend
+      dockerfile: Dockerfile
+    image: burning-okr-backend-local:latest
+
+  frontend:
+    build:
+      context: ../frontend
+      dockerfile: Dockerfile
+    image: burning-okr-frontend-local:latest

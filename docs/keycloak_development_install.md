@@ -1,33 +1,34 @@
-# Install Keycloak
+﻿# 安装 Keycloak
 
-# <span style="color:#E52B50">Disclaimer</span>
+# <span style="color:#E52B50">免责声明</span>
 
-**This README document is provided for DEVELOPMENT USE ONLY!**
+**本 README 仅用于开发场景。**
 
-**The content provided in this Readme file is intended solely for development and informational purposes. It is designed to guide developers and technical users in understanding and implementing the features and functionalities of the described software. <span style=color:#E52B50>This document does not constitute official product documentation and should not be considered exhaustive or definitive.</span>**
+**本文内容仅用于开发与技术说明，帮助开发者理解并实现相关功能。<span style=color:#E52B50>本文并非官方产品文档，也不保证覆盖所有情况或为最终标准。</span>**
 
-**The information presented here is subject to change without notice and may not reflect the most up-to-date details of the software. Developers are encouraged to refer to the [official documentation](https://www.keycloak.org/getting-started/getting-started-docker) and resources provided by the software's maintainers for the most accurate and current information.**
+**文中信息可能随时变更，且不一定是最新状态。请以 Keycloak 维护方提供的[官方文档](https://www.keycloak.org/getting-started/getting-started-docker)为准。**
 
-**While efforts have been made to ensure the accuracy of the information contained in this document, no guarantees are made regarding the completeness, correctness, or suitability of the content for specific purposes. Users are advised to exercise their own discretion and verify information through official sources before making decisions based on the content of this Readme.**
+**我们已尽力保证信息准确，但不对内容的完整性、正确性或特定用途适用性做任何担保。请在实际决策前自行核验官方信息。**
 
-**Developers should be aware that software development involves inherent risks, and any actions taken based on the information provided here are done at their own risk. The authors and contributors of this Readme disclaim any liability for damages, losses, or adverse effects arising from the use or misuse of the information contained herein.**
+**软件开发本身存在风险。基于本文执行任何操作，风险由使用者自行承担。本文作者与贡献者不对因使用或误用本文信息导致的损失负责。**
 
-**By reading this Readme document, <span style="color:#E52B50">you acknowledge and agree to the terms of this disclaimer</span>. If you do not agree with these terms, we advise you to refrain from using or relying on the information provided within this document for development purposes.</span>**
+**阅读本文即表示你已知悉并同意上述免责声明。若不同意，请勿将本文作为开发依据。**
 
-## Overview
+## 概览
 
-Welcome to the Keycloak Readme!
-This document provides a high-level overview of Keycloak, an open-source identity and access management solution developed by Red Hat. Keycloak simplifies the process of securing applications and services by offering a centralized authentication and authorization platform.
+欢迎使用 Keycloak 说明文档。
+本文提供 Keycloak 的高层介绍。Keycloak 是 Red Hat 提供的开源身份与访问管理（IAM）方案，可通过集中式认证与授权简化应用安全接入。
 
-## What is Keycloak?
+## 什么是 Keycloak？
 
-Keycloak is a robust and extensible Identity and Access Management (IAM) system that helps organizations manage user identities, authentication, and authorization in a secure and user-friendly manner. It serves as a comprehensive solution for handling user authentication, single sign-on (SSO), and authorization, enabling developers to focus on building applications while delegating user management concerns to Keycloak.
+Keycloak 是一个健壮且可扩展的 IAM 系统，用于安全且友好地管理用户身份、认证与授权。
+它提供用户认证、单点登录（SSO）和授权能力，让开发者把精力集中在业务开发，将用户管理交给 Keycloak。
 
-## Getting started
+## 快速开始
 
-To start using Keycloak, follow the official documentation which is provided from Keycloak: <https://www.keycloak.org/getting-started/getting-started-docker>
+请按 Keycloak 官方文档操作：<https://www.keycloak.org/getting-started/getting-started-docker>
 
-1. Make sure to name the created realm `burning-okr`
-2. To manage the realm, create a Realm Role and the name must be `burning-okr-admin`
+1. 创建的 realm 名称请设置为 `burning-okr`
+2. 在该 realm 中创建 Realm Role，名称必须为 `burning-okr-admin`
 
-By following all necessary steps from the official documentation, you now have Keycloak set up.
+按官方文档完成全部步骤后，Keycloak 即可用于 BurningOKR 开发。

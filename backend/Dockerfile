@@ -1,11 +1,11 @@
-FROM gradle:7.6-jdk AS build
+FROM gradle:8.8-jdk17 AS build
 
 COPY --chown=gradle:gradle burning-okr /home/gradle/src
 WORKDIR /home/gradle/src
 
-RUN gradle bootJar --no-daemon
+RUN gradle :burning-okr-app:bootJar --no-daemon
 
-FROM openjdk:21
+FROM eclipse-temurin:17-jre
 
 EXPOSE 8080
 

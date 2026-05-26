@@ -1,40 +1,40 @@
-# How can I contribute?
+﻿# 如何参与贡献
 
-## Report Bugs and provide Feature Requests
-We use GitHub issues for both.
-First, use the [github search](https://github.com/burningOKR/burningOKR/search?q=is%3Aissue&unscoped_q=is%3Aissue) to check if your issue has been reported already.
-If you find that someone already reported your problem, feel free to share additional information to help us investigate the bug more quickly.
+## 报告 Bug 与提出功能需求
+我们统一使用 GitHub Issues 处理这两类问题。
+请先用 [GitHub 搜索](https://github.com/burningOKR/burningOKR/search?q=is%3Aissue&unscoped_q=is%3Aissue) 检查该问题是否已被报告。
+如果已有同类问题，欢迎补充信息，帮助我们更快定位与修复。
 
-If you could not find a matching issue and want to open a new ticket, please try to follow the issue template and provide all the necessary information. However, an incomplete ticket that reports a critical bug is still better than no ticket at all.
+如果没有找到对应 issue 并准备新建，请尽量遵循 issue 模板并提供必要信息。
+但如果是严重问题，即使信息不完整，也比不提 issue 更好。
 
-## Become a developer
-Please refer to the [developer readme](/docs/developer_readme.md) for build and test instructions, as well as our coding guidelines.
+## 成为开发者
+构建、测试与编码规范请参考 [开发者说明](/docs/developer_readme.md)。
 
-Pull requests are always welcome! If you have never contributed to an open source project on GitHub before, check out [this guide for first-timers](https://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/).
-When opening a new pull request, try to stick to the template as much as is reasonable, but don't be afraid to leave out or add information if that would make your PR more concise and readable.
+我们非常欢迎 Pull Request。如果你第一次在 GitHub 参与开源项目，可以先看这份[新手指南](https://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/)。
+创建 PR 时，请尽量遵循模板；若为了更清晰简洁而增删部分内容也完全可以。
 
-## Choose a good place to start
+## 从哪里开始更好
 
-#### Improving documentation
-Improving documentation (code comments, wikis, website) is an excellent way of familiarizing yourself with the project and improving the codebase at the same time!
+#### 改进文档
+改进文档（代码注释、Wiki、网站等）是快速熟悉项目并同时提升代码库质量的好方式。
 
-#### Fixing lint warnings
-We want to get Burning OKR to be [checkstyle](https://checkstyle.org/) clean. In order to do this, open the [checkstyle configuration](build-tools/src/main/resources/google_checks.xml) at 
-`build-tools/src/main/resources/google_checks.xml` and re-add one of the commented-out lints.  
-After having fixed all the warnings, submit a pull request.
+#### 修复 lint 警告
+我们希望将 Burning OKR 逐步做到 [checkstyle](https://checkstyle.org/) 无警告。
+为此可打开 [checkstyle 配置](build-tools/src/main/resources/google_checks.xml)（路径：`build-tools/src/main/resources/google_checks.xml`），恢复一个被注释掉的规则，然后修复相关警告并提交 PR。
 
-#### Fixing bugs
-Pick a ticket from the [bugtracker](https://github.com/BurningOKR/BurningOKR/issues) and leave a comment letting us know that you are working on a fix.  
-If you have any questions, feel free to discuss it in the ticket.
-Make sure the fix adheres to the [coding guidelines](docs/developer_readme.md).
+#### 修复 Bug
+从 [问题列表](https://github.com/BurningOKR/BurningOKR/issues) 选择一个 issue，并评论说明你正在修复。
+如果有疑问，欢迎直接在该 issue 下讨论。
+请确保修复符合 [编码规范](docs/developer_readme.md)。
 
-#### Implementing new features
-Before integrating a new feature, it's best to discuss it with the core developers first.  
-This can be done in the corresponding GitHub issue in the [bugtracker](https://github.com/BurningOKR/BurningOKR/issues).
+#### 实现新功能
+在集成新功能前，建议先和核心开发者沟通。
+通常可在 [问题列表](https://github.com/BurningOKR/BurningOKR/issues) 对应 issue 中讨论。
 
-* Make sure you add tests of your functionality.
-* All tests should pass, the code should be properly formatted (see coding guidelines) and continuous integration must give its ok on the pull request.
-* Submit a [pull request](https://github.com/BurningOKR/BurningOKR/compare)
+- 请为你的功能补充测试。
+- 所有测试需通过，代码需按规范格式化，且 CI 必须通过。
+- 最后提交 [pull request](https://github.com/BurningOKR/BurningOKR/compare)。
 
-## Stick to our license
-All changes to this project must comply with the [Apache 2.0 License](/LICENSE.txt)
+## 遵循许可证
+对本项目的所有改动都必须符合 [Apache 2.0 License](/LICENSE.txt)。

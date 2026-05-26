@@ -1,61 +1,62 @@
-# Install and Setup Microsoft SQL Server
+﻿# Microsoft SQL Server 安装与配置
 
 ## Windows
 
-1. Download Microsoft SQL Server: <https://www.microsoft.com/de-de/sql-server/sql-server-downloads>
-    - You will need a license for production workloads.
-    - You can use SQL Server Express for development purposes.
-    - You can find more information on Microsofts website.
+1. 下载 Microsoft SQL Server：<https://www.microsoft.com/de-de/sql-server/sql-server-downloads>
+   - 生产负载需要商业许可。
+   - 开发场景可使用 SQL Server Express。
+   - 更多信息请参考微软官网。
 
-2. Install Microsoft SQL Server using the installer. Select **Basic Installation**
+2. 使用安装程序安装 SQL Server，选择 **Basic Installation**。
 
-   After the installer has finished, you will see the following Screen. Do not close it yet.
+   安装完成后会看到如下界面，先不要关闭。
 
    ![SQL_Server_Install_Overview](./images/sqlserver_install_overview.PNG)
 
-3. Click on `Install SSMS`. Your Web Browser will open.
-4. On the Website, click on `Download SQL Server Management Studio (SSMS)`. Your Download will start.
-5. Run the downloaded setup and click on `Install`. You can close all windows when the installation is complete.
-6. Open `Microsoft SQL Server Management Studio` (SSMS).
-    1. SSMS will prompt you to connect to a Server on startup. Do not change any values an click on connect.
-       This will connect you to the local SQL Server instance that was installed earlier.
+3. 点击 `Install SSMS`，浏览器会打开。
+4. 在页面中点击 `Download SQL Server Management Studio (SSMS)` 开始下载。
+5. 运行下载的安装程序，点击 `Install`。安装完成后可关闭相关窗口。
+6. 打开 `Microsoft SQL Server Management Studio`（SSMS）。
+   1. 启动时会弹出连接服务器窗口，不改默认值直接点击连接。
+      这会连接到本机刚安装的 SQL Server 实例。
 
-       ![SQL_Server_Connect_Window](./images/ssms_connect_to_server.PNG)
-    2. On the left is the `Object Explorer`. Expand the entries so that it looks like this:
+      ![SQL_Server_Connect_Window](./images/ssms_connect_to_server.PNG)
 
-       ![SQL_Server_Object_Explorer](./images/ssms_object_explorer.PNG)
+   2. 左侧是 `Object Explorer`，展开后应类似下图：
 
-    3. Change the `Server Authentication Mode`.
-        1. Right click on the Root-Node of the `Object Explorer` and select `properties`.
-        2. On the left select `Security`
-        3. Under `Server authentication` select `SQL Server and Windows Authentication mode`. It should look something like this:
-        ![SQL_SERVER_AUTHENTICATION_MODE](./images/ssms_change_server_authentication.png)
+      ![SQL_Server_Object_Explorer](./images/ssms_object_explorer.PNG)
 
-    4. Create a new Login by right clicking `Logins` in the `Object Explorer` and selecting `New Login...`.
-        1. Set a meaningful `Login Name`. For Example `BurningOKR_User`.
-        2. Select `SQL Server authentication`
-        3. Set a secure `Password`.
-        4. Remove the ticks from `Enforce password expiration` and `User must change password at next login`.
-        5. Click on `Ok`
-    5. Create a new Database by right clickng `Databases` in the `Object Explorer` and selecting `New Database...`
-        1. Set a meaningful `Database name`. For Example `okr`
-        2. Click on `...` next to `Owner`. A new Window opens. Click on `Browse...`. A new Window Opens. Select the Login, that was created earlier.
+   3. 修改 `Server Authentication Mode`：
+      1. 右键 `Object Explorer` 根节点，选择 `properties`
+      2. 左侧选择 `Security`
+      3. 在 `Server authentication` 选择 `SQL Server and Windows Authentication mode`，示例如下：
+      ![SQL_SERVER_AUTHENTICATION_MODE](./images/ssms_change_server_authentication.png)
 
-           ![SQL_Server_Create_Database](./images/ssms_create_database.PNG)
-        3. Click on `Ok` in every open window.
-    6. You can now close `Microsoft SQL Server Management Studio`.
-7. Open `SQL Server Configuration Manager`
-(Windows-Key + R and enter `compmgmt.msc` -> Expand `Services and Applications` -> Expand `SQL Server Configuration Manager`)
-    1. Click on `SQL Server Network Configuration`.
-    2. Click on `Protocols for SQLEXPRESS`.
-    3. Right Click on `TCP/IP` and select `Properties`.
-    4. Click on the `IP Addresses` Tab.
-    5. Scroll down to `IPALL`
-    6. Remove any value from `TCP Dynamic Ports`
-    7. Set the `TCP Port` to 1433.
-    8. Click `Ok`.
-    9. Click on `SQL Server Services`
-    10. Right Click on `SQL Server (SQLEXPRESS)` and select `Restart`.
-    11. Close the SQL Server Configuration Manager.
-8. Done. You SQL Server is now ready for BurningOKR. You can now go back to
-   the Installation Tutorial.
+   4. 新建登录账号：右键 `Logins` -> `New Login...`
+      1. 设置有意义的 `Login Name`，例如 `BurningOKR_User`
+      2. 选择 `SQL Server authentication`
+      3. 设置强密码
+      4. 取消勾选 `Enforce password expiration` 和 `User must change password at next login`
+      5. 点击 `Ok`
+   5. 新建数据库：右键 `Databases` -> `New Database...`
+      1. 设置有意义的 `Database name`，例如 `okr`
+      2. 在 `Owner` 旁点击 `...`，打开窗口后点 `Browse...`，选择刚创建的登录账号。
+
+         ![SQL_Server_Create_Database](./images/ssms_create_database.PNG)
+
+      3. 在所有打开窗口中点击 `Ok` 保存。
+   6. 现在可以关闭 SSMS。
+7. 打开 `SQL Server Configuration Manager`
+（`Win + R` 输入 `compmgmt.msc` -> 展开 `Services and Applications` -> 展开 `SQL Server Configuration Manager`）
+   1. 点击 `SQL Server Network Configuration`
+   2. 点击 `Protocols for SQLEXPRESS`
+   3. 右键 `TCP/IP` -> `Properties`
+   4. 切换到 `IP Addresses` 标签
+   5. 滚动到底部 `IPALL`
+   6. 清空 `TCP Dynamic Ports`
+   7. 将 `TCP Port` 设为 `1433`
+   8. 点击 `Ok`
+   9. 点击 `SQL Server Services`
+   10. 右键 `SQL Server (SQLEXPRESS)`，选择 `Restart`
+   11. 关闭 SQL Server Configuration Manager
+8. 完成。你的 SQL Server 已可用于 BurningOKR，可返回安装主流程。

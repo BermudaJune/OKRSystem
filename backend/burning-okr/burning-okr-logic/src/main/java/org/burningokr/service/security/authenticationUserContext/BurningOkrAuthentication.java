@@ -24,6 +24,6 @@ public class BurningOkrAuthentication extends AbstractOAuth2TokenAuthenticationT
 
   @Override
   public Map<String, Object> getTokenAttributes() {
-    return null;
+    return getToken() != null ? getToken().getClaims() : Map.of();
   }
 }

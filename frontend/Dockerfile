@@ -3,7 +3,7 @@ FROM node:18 AS build
 
 WORKDIR /usr/src/app
 COPY . .
-RUN npm ci
+RUN npm install --no-audit --no-fund
 RUN npm run build-docker
 
 

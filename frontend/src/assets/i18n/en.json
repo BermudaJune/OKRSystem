@@ -328,7 +328,7 @@
     "select-parent-key-result": "Choose a parent Key Result",
     "task-state": "State",
     "title": "Title",
-  "revisions": {
+    "revisions": {
       "date": "Date",
       "user": "User",
       "field": "Field",
@@ -341,7 +341,8 @@
         "assignedUserIds": "Editor",
         "assignedKeyResult": "Key result"
       }
-    }},
+    }
+  },
   "department-tab-taskboard": {
     "columns": "Columns",
     "swimlanes": "Swimlanes",
@@ -471,7 +472,8 @@
   "language-picker": {
     "language": {
       "english": "English",
-      "german": "German"
+      "german": "German",
+      "chinese": "Chinese"
     },
     "select-trigger-text": "Select language"
   },

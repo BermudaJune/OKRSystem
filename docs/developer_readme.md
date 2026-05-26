@@ -1,38 +1,40 @@
-# Implementation Information
+﻿# 实现说明
 
-## Backend
+## 后端
 
-### Logging
+### 日志
 
-This project uses [`java.util.logging.Logger`](https://docs.oracle.com/javase/7/docs/api/java/util/logging/Logger.html) for displaying runtime information.
+项目使用 [`java.util.logging.Logger`](https://docs.oracle.com/javase/7/docs/api/java/util/logging/Logger.html) 输出运行时信息。
 
-#### Levels
+#### 日志级别
 
-- `Level.FINE` Exception Stacktrace, Background Information for Exceptions in Tests
-- `Level.SEVERE` Parameter Information that caused exception, Exception Error Message
+- `Level.FINE`：异常堆栈、测试中异常的背景信息
+- `Level.SEVERE`：触发异常的参数信息、异常错误信息
 
-### Code Documentation
+### 代码文档
 
-The project uses [these guidelines](/docs/javadoc_guidelines.md) for *JavaDoc* comments in source files.
+源码中的 *JavaDoc* 注释请遵循 [此规范](/docs/javadoc_guidelines.md)。
 
-### Formatting
+### 格式化
 
-Section needs to be fixed.
+该部分后续仍可进一步完善。
 
-We use the [format-maven-plugin](https://github.com/coveooss/fmt-maven-plugin) during build which makes use of google-java-format to enforce consistent formatting across the codebase.
+我们在构建过程中使用 [format-maven-plugin](https://github.com/coveooss/fmt-maven-plugin)，其底层依赖 google-java-format 来统一代码格式。
 
-To trigger autoformat manually run `mvn com.coveo:fmt-maven-plugin:format` in the project root directory.
+如需手动自动格式化，可在项目根目录执行：
+
+`mvn com.coveo:fmt-maven-plugin:format`
 
 ### Checkstyle
 
-The [Checkstyle Maven Plugin](https://maven.apache.org/plugins/maven-checkstyle-plugin/index.html) can be run via `mvn checkstyle:check`.
-It uses a [modified](build-tools/src/main/resources/google_checks.xml) [google java style](https://google.github.io/styleguide/javaguide.html) configuration.
+可通过 `mvn checkstyle:check` 运行 [Checkstyle Maven Plugin](https://maven.apache.org/plugins/maven-checkstyle-plugin/index.html)。
 
-### Migrations
+该插件使用了一个基于 [google java style](https://google.github.io/styleguide/javaguide.html) 的[修改版配置](build-tools/src/main/resources/google_checks.xml)。
 
-Migrations have to be created for PostgreSQL and Microsoft SQL Server separately.
-Some data types are different between these two database systems.
-Here is a table with equivalent data types, to keep the migrations consistent:
+### 数据库迁移
+
+PostgreSQL 与 Microsoft SQL Server 的迁移脚本需要分别维护。
+两种数据库在部分数据类型上不同，等价关系如下：
 
 | PostgreSQL | MSSQL |
 |------------|-------|
@@ -40,7 +42,7 @@ Here is a table with equivalent data types, to keep the migrations consistent:
 | timestamp without timezone | datetime2 |
 | uuid   | uniqueidentifier |
 
-To use the PostgreSQL Server you have to set the following setting in the `application.yaml`:
+使用 PostgreSQL 时，请在 `application.yaml` 中设置：
 
 ```yaml
 spring:
@@ -50,7 +52,7 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
 ```
 
-and to use the MSSQL Server yiu have to set the following setting in the `application.yaml`:
+使用 MSSQL 时，请在 `application.yaml` 中设置：
 
 ```yaml
 spring:
@@ -60,25 +62,31 @@ spring:
         dialect: org.burningokr.dialects.SQLServer2012UUIDFixDialect
 ```
 
-For every migration you create, you **MUST** create a migration for the MSSQL Server and for the PostgreSQL server.
-Migrations are simple sql scripts, and they can be found in `burning-okr-app/src/main/resources/db/migration`.
-There are two directories, `postgresql` and `sqlserver`. Create a migration script in each directory. The migration scripts
-should generally do the same, but they need to stick to the dialect of the corresponding dbms.
+每次新增迁移时，你**必须同时**提供：
 
-## Frontend
+- MSSQL 迁移脚本
+- PostgreSQL 迁移脚本
 
-### Decorators
+迁移脚本位于 `burning-okr-app/src/main/resources/db/migration`，包含 `postgresql` 与 `sqlserver` 两个目录。
+请在两个目录分别创建脚本，语义上应一致，但语法需符合对应数据库方言。
 
-#### Fetchable Decorator
+## 前端
 
-A Service which needs to Fetch Data on Application Startup or when a User logs in, needs to have the `@Fetchable()` Decorator and the `Fetchable` interface.
-The Fetchable Interface enforces the implementation of the `fetchData(): void` method.
+### 装饰器
 
-You can add the whole logic for fetching any data, that the service needs within the fetchData Method.
-This Method will be called by the Fetchable Decorator on Application Startup and
-when a new User logs in.
+#### Fetchable 装饰器
 
-Here is an example usage of Fetchable:
+如果某个 Service 需要在应用启动或用户登录时拉取数据，则该 Service 需要：
+
+- 添加 `@Fetchable()` 装饰器
+- 实现 `Fetchable` 接口
+
+`Fetchable` 接口要求实现 `fetchData(): void` 方法。
+
+你可以将该 Service 所需的数据拉取逻辑放入 `fetchData` 方法。
+该方法会在应用启动及用户登录后由 Fetchable 装饰器触发。
+
+示例：
 
 ```typescript
 @Fetchable()

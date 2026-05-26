@@ -1,56 +1,50 @@
-# Introduction
+﻿# 简介
 
-This is the Frontend project for the Tool Burning OKR by **Brockhaus AG**.
-For the corresponding Backend please refer to the other Project in this repository.
+这是 **Brockhaus AG** 的 Burning OKR 工具前端项目。
+对应后端位于本仓库中的其他模块。
 
-This tool is designed to help to organise and communicate corporate objectives, which follow the OKR planning framework.
+该工具用于组织和传达企业目标，遵循 OKR 规划框架。
 
-It allows the user to set Objectives for a given company Okr Unit, which may or may not be formulated vague and then
-quantify
-these objectives by associating key results, which should be numerically measurable and can therefor be used to track
-the
-progress on the associated objectives.
+用户可以为公司中的 OKR 单元设定 Objective（目标），这些目标可以是定性的；
+随后通过关联可量化的 Key Result（关键结果）来衡量目标完成情况，并据此跟踪进度。
 
-In addition this, this tool allows the user to review the objectives set in previous time intervals and get an accurate
-prediction
-on to what amount the objectives set will be fulfilled by the end of the set time interval.
+此外，该工具支持回顾历史周期目标，并对当前周期结束时的达成度进行较准确的预测。
 
-This project was build using Angular6.
+本项目基于 Angular 构建。
 
-# Getting Started
+# 快速开始
 
-### Installation process
+### 安装
 
-- install node.js. (https://nodejs.org/en/)
-- `npm install @angular/cli -g`
-- `npm install` in project folder to load dependencies
+- 安装 Node.js：<https://nodejs.org/en/>
+- 安装 Angular CLI：`npm install @angular/cli -g`
+- 在项目目录执行 `npm install` 安装依赖
 
-With the AngularCLI installed you should be able to open the application in an IDE of your choice.
+安装 Angular CLI 后，你可以在任意 IDE 中打开并开发该前端项目。
 
-### Development
+### 开发
 
-To start the development server use command `npm start` (note that a running backend on port 8080 is required or
-configure proxy.conf.json)
+启动开发服务器：`npm start`
 
-# Build and Test
+注意：需要后端服务运行在 `8080` 端口，或自行调整 `proxy.conf.json`。
 
-For a release build use `npm run build`
+# 构建与测试
 
-To run the unit tests in project use `npm run test`
+- 生产构建：`npm run build`
+- 运行单元测试：`npm run test`
 
-The frontend develop-branch gets deployed to test system when changes are pushed to the server.
+前端 `develop` 分支在代码推送后会部署到测试系统：
 
 http://javatrainingkit.westeurope.cloudapp.azure.com/app/
 
-Here is the access timetable for the server
+测试服务器访问时间表：
 
 ![alt text](zeitplan_azure_vm.png)
 
-# Deployment
+# 部署
 
-The master-branch gets deployed to production, therefore master should only receive thoroughly tested commits.
-To inspect the productive Service visit:
+`master` 分支会部署到生产环境，因此进入 `master` 的提交应经过充分测试。
+
+生产服务地址：
 
 https://okr.brockhaus-ag.de/
-
-

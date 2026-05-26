@@ -1,0 +1,18 @@
+- Generating browser application bundles (phase: setup)...
+√ Browser application bundle generation complete.
+
+Warning: D:\A实习A\BurningOKR\frontend\node_modules\@stomp\rx-stomp\esm6\rx-stomp-rpc.js depends on 'angular2-uuid'. CommonJS or AMD dependencies can cause optimization bailouts.
+For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+
+Warning: D:\A实习A\BurningOKR\frontend\node_modules\ng-apexcharts\fesm2015\ng-apexcharts.mjs depends on 'apexcharts'. CommonJS or AMD dependencies can cause optimization bailouts.
+For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+
+Warning: D:\A实习A\BurningOKR\frontend\src\app\okrview\excel-file\excel.mapper.ts depends on 'file-saver'. CommonJS or AMD dependencies can cause optimization bailouts.
+For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+
+Warning: D:\A实习A\BurningOKR\frontend\src\app\shared\services\mapper\date.mapper.ts depends on 'moment'. CommonJS or AMD dependencies can cause optimization bailouts.
+For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+
+
+(node:20656) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)

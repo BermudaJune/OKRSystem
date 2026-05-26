@@ -1,8 +1,8 @@
-<app-dialog-component (okEmitter)="createCycle()" *ngIf="cycleForm" [formGroup]="cycleForm" [hasFormGroupError]="true"
+﻿<app-dialog-component (okEmitter)="createCycle()" *ngIf="cycleForm" [formGroup]="cycleForm" [hasFormGroupError]="true"
                       saveAndCloseLabel="{{saveAndCloseLabel}}" title="{{title$ | async}}">
   <form [formGroup]="cycleForm">
     <mat-form-field class="fullWidth">
-      <input formControlName="name" matInput placeholder="Name" type="text">
+      <input formControlName="name" matInput placeholder="{{ 'cycle-edit-form.name' | translate }}" type="text">
       <mat-error>
         <app-form-error [control]="cycleForm.get('name')"></app-form-error>
       </mat-error>
